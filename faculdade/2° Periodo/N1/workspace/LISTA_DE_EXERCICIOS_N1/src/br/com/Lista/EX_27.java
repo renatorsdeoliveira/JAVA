@@ -1,0 +1,29 @@
+package br.com.Lista;
+
+import javax.swing.JOptionPane;
+
+public class EX_27 {
+	
+	 public static void main(String[] args) {    
+       int num,divisores, div;
+       
+       for(num=1; num<=1000; num++){
+    	   
+       
+       divisores = 0;
+       for(div = 1; div <=num; div++){
+    	   
+    	   if(num%div==0)
+			{
+				divisores++;
+			}
+		}
+			if(divisores==2)
+			{
+				System.out.println( num+" é Primo");
+			}
+       }
+       
+       }
+    }	
+

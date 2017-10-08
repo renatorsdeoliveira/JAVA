@@ -1,0 +1,32 @@
+package br.com.Lista;
+
+import javax.swing.JOptionPane;
+
+public class EX_14 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int matricula, horasExras;
+		final double salarioMinimo = 788 ,valorHoraExtra = 10;
+		double SalariohoraExtra, SalarioBruto, DescontoINSS, DescontoImpostoRenda, salarioLiquido ;
+		
+		matricula = Integer.parseInt(JOptionPane.showInputDialog("Digite sua Matrica: "));
+		horasExras = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de horas extras: "));
+		
+		 SalariohoraExtra = horasExras * valorHoraExtra;
+		 SalarioBruto = 3 * salarioMinimo +  SalariohoraExtra;
+		 DescontoINSS = 0.12 * SalarioBruto;
+		 DescontoImpostoRenda = 0.20 * SalarioBruto;
+		 
+		if(SalarioBruto>1500){
+			SalarioBruto = SalarioBruto * 0.20;
+			
+		JOptionPane.showMessageDialog(null, "Seu Salarios é de:"+SalarioBruto);
+		}else if(SalarioBruto >2000){
+			salarioLiquido =  SalarioBruto * 0.32;
+			JOptionPane.showMessageDialog(null, "Seu Salarios é de:"+salarioLiquido);
+		}
+	}
+
+}

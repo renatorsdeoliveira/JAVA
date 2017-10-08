@@ -1,0 +1,29 @@
+package br.com.Lista;
+
+	import java.util.Scanner;
+
+public class EX_33 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner entrada = new Scanner (System.in);
+		
+	int	vetor [] = new int [10];
+	boolean achou;
+	
+	for(int i = 0; i < vetor.length; i++){
+	
+		System.out.printf("Digite um numero na posição [%d]: ",i+1);
+		vetor[i] = entrada.nextInt();
+		System.out.println(vetor[i]);
+		
+		
+				
+		}
+		
+	
+
+	}
+
+}

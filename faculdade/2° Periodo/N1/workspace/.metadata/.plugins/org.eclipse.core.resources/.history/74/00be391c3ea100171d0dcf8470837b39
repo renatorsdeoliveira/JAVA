@@ -1,0 +1,25 @@
+package br.com.Lista;
+
+public class EX_30 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i = 1;
+		int j;
+		while (i<=3) {
+		    // para cada linha
+		    // escreve a linha com um outro comando while
+		    j = 1;
+		    while (j<=1) {
+		        // para cada coluna escreve um asterisco
+			System.out.println("*");
+		        j = j + 1;
+		    }  
+		    // ao final da linha, escreve caractere final-de-linha
+			System.out.println("\n"); 
+		    i = i + 1;
+		
+	}
+
+	}
+}

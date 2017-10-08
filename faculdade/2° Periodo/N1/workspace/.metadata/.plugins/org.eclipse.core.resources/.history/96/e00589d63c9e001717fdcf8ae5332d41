@@ -1,0 +1,27 @@
+package br.com.area;
+
+	import java.util.Scanner;
+
+public class Transicao {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner ler = new Scanner(System.in);
+		
+		
+		int i;
+		int vetor[] = new int[15];
+		for ( i=0; i<vetor.length; i++){
+			System.out.printf("Digite um numero [%d]º para ser Calcúlado: ",i);
+			vetor[i] = ler.nextInt();  	
+			
+			Math.sqrt(vetor[i]);
+			
+			if(vetor[i] < 0){
+				vetor[i] = vetor[i] + 1;
+			}
+			System.out.println(vetor[i]);
+		}
+		System.out.println(vetor[i]);
+	}
+}

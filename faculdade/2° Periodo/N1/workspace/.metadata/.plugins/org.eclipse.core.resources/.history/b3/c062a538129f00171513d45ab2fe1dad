@@ -1,0 +1,27 @@
+package br.com.area;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Soteia_test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+//		
+//		Random sorteia = new Random();
+//		
+//	 	sorteia.nextInt();
+//	
+//			System.out.println(dado);
+//			
+			
+	}
+	
+	public static int sorteia(int limiteInferior, int limiteSuperior)
+	{
+		Random rd = new Random();
+		return rd.nextInt(limiteSuperior - limiteInferior + 1) + limiteInferior;
+	}
+
+}

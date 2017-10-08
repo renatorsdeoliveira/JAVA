@@ -1,0 +1,63 @@
+package br.com.Lista;
+
+public class EX_26 {
+
+	include<stdio.h>
+	include<stdlib.h>
+	include<conio.h>
+	int main()
+	{
+	char saque=0,saldo=0,deposito=0,operacao,sair;
+	do
+	{
+
+	printf("\n<a>Consultar Saldo\n<b>Deposito\n<c> Saque\n<d>Sair\n");
+	scanf("%c",&operacao);
+	system("PAUSE");
+
+	switch(operacao)
+	{
+	case 'a':
+	saldo=-saque+deposito;
+	printf("Operacao Desejada:Saldo\n");
+	printf("Saldo......R$%d\n",saldo);
+	system("PAUSE");
+	break;
+
+	case 'b':
+	printf("Operacao Desejada:Deposito\n");
+	printf(" Digite o Valor a Ser Depositado:R$");
+	scanf("%d",&deposito);
+	saldo=(deposito)-(saque);
+	printf("Seu saldo é:R$ %d\n",saldo);
+	system("PAUSE");
+	break;
+
+	case 'c':
+	printf("Operacao Desejada:Saque\n");
+	printf("Digite o Valor Solicitado:R$");
+	scanf("%d",&saque);
+	system("PAUSE");
+	if (saque>saldo)
+	{
+	printf("Valor Solicitado R$%d é menor que o saldo disponivel que é R$%d\n",saque,saldo);
+	saque=(0);
+	system("PAUSE");
+	}
+	else if (saque<=saldo)
+	{
+	saldo=(deposito)-saque;
+	printf("Seu novo Saldo é:R$%d",&saldo);
+	}
+	break;
+
+	case 'd':   
+	printf("Obrigado por Utilizar nosso serviço ");
+	getch();
+	return(0);
+	}
+	}while(true);
+	return 0;
+	}
+
+}

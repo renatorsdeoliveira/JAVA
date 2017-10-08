@@ -1,0 +1,49 @@
+package br.com.Lista;
+
+	import java.util.Scanner;
+
+public class EX_31 {
+
+	private static Scanner in;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		in = new Scanner (System.in);
+		
+		int vetor [] = new int [2];
+		int menor = 0, maior = 0;
+		int x, y;
+		
+		for( x=0; x<vetor.length; x++){
+			
+			System.out.printf("Digite o [%d]º de um numero: ",x);	
+			vetor[x] = in.nextInt();
+			
+			if(vetor[x] >menor){
+				menor = vetor[x];
+			}
+		System.out.printf("O Maior elemento de y é [%d] na posição [%d]:",menor, x+1);
+			
+		}
+		
+		System.out.print(menor);	
+		
+		for( y=0; y<vetor.length; y++){
+			
+			System.out.printf("\nDigite o [%d]º de um numero: ", y);	
+			vetor[y] = in.nextInt();
+			if(vetor[y] >maior){
+				maior = vetor[y];
+			}
+			
+		}
+		System.out.printf("O Maior elemento de y é [%d] na posição [%d]:",maior, y+1);
+		
+			
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+package br.com.Lista;
+
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+public class EX_27 {
+	
+	 public static void main(String[] args) {    
+         int n[] = new int[9];    
+         for (int i = 0; i < n.length; i++) {    
+             n[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite o " + (1 + i) + "º numero"));    
+         } 
+         for (int i = 0; i < n.length; i++) {
+             boolean primo = true;    
+             for (int j = 2; j < n[i]; j++) {
+                 if (n[i] % j == 0) {
+                     primo = false;    
+                     break;    
+                 }     
+             }    
+             if (primo == true) {    
+            	 JOptionPane.showMessageDialog(null,n[i] + " é primo. Posição no vetor: " + i);
+             }    
+         }    
+
+    }	
+}

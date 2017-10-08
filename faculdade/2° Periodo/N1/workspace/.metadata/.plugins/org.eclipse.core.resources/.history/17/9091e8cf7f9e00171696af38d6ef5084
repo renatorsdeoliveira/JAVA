@@ -1,0 +1,42 @@
+package br.com.area;
+import java.util.Scanner;
+public class Soma_de_vetor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner in = new Scanner(System.in);
+		int i = 0;
+		int a [] = new int [2];
+		int b [] = new int [a.length];
+		int c [] = new int [a.length];
+		
+		for( i = 0; i<a.length; i++){
+			System.out.printf("Digite o %dº : ",i);
+			a [i] = in.nextInt();
+			
+		}
+		for( i = 0; i<a.length; i++){
+			System.out.printf("Digite o %dº : ",i);
+			b [i] = in.nextInt();
+			
+		
+		}
+		for( i = 0; i<a.length; i++){
+			System.out.printf("Valor de ", a[i]);
+			
+			
+		}
+		for( i = 0; i<a.length; i++){
+			System.out.printf("Valor de ", b[i]);
+		
+		}
+		for( i = 0; i<a.length; i++){
+			c[i] = a[i] + b[i];
+			System.out.println("o vesultado é "+c[i]);
+		}
+		
+	}		
+
+
+}

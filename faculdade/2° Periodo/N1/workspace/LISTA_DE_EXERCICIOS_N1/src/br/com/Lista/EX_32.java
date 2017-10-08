@@ -1,0 +1,41 @@
+package br.com.Lista;
+
+	import java.util.Scanner;
+
+public class EX_32 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner ler = new Scanner(System.in);
+		
+		
+		int i;
+		int vetorA[] = new int[15];
+		double vetorB[] = new double[ vetorA.length];
+		for ( i=0; i<vetorA.length; i++){
+			
+			System.out.printf("Digite um numero [%d]º para ser Calcúlado: ",i);
+			vetorA[i] = ler.nextInt();  			
+				
+			vetorB[i] = Math.sqrt(vetorA[i]);
+		}
+		
+		System.out.print("\n\t\tRESULTADO");
+		for ( i=0; i<vetorA.length; i++){
+			
+			if(vetorA[i] < 0){
+			    
+				vetorB[i] = vetorB[i]+1;
+				
+ 
+				System.out.printf("\nRaiz de numero na possição "+i+" é : "+vetorB[i]);
+			} else {
+				
+				System.out.printf("\nRaiz de numero na possição "+i+" é : "+vetorB[i]);
+			}
+		}
+		 
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package br.com.Lista;
+
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+public class EX_27 {
+	
+	public static void main(String[] args) {
+		Scanner in = new Scanner (System.in);
+		
+        int n[] = new int[9];
+        for (int i = 0; i < n.length; i++) {
+          System.out.println("Digite o " + (1 + i) + "º numero");
+             n[i] = in.nextInt(); 
+        }
+        for (int i = 1; i < n.length; i++) {
+            boolean primo = true;
+            for (int j = 2; j < n.length; j++) {
+                if (n[i] % i == 0) {
+                    primo = false;
+                    break;
+                }
+            }
+            if (primo == true) {
+                System.out.println(n[i]);
+                System.out.println(i);
+            }
+           
+        }
+    }
+}

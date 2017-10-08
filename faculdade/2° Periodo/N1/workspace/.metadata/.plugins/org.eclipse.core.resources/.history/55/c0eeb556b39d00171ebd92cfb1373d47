@@ -1,0 +1,25 @@
+package br.com.Lista;
+	import java.util.Scanner;
+public class EX_30 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner in = new Scanner(System.in);
+		
+		int entrada; 
+		int y = 0, i=0;
+		
+		System.out.println("Digite um numero: ");
+		entrada = in.nextInt();
+		
+		for(i=0; i<entrada; i--){
+			System.out.println("\n");
+			for(y=i; y<i; y--){
+				System.out.println("*");	
+			}
+		}
+
+	}
+
+}

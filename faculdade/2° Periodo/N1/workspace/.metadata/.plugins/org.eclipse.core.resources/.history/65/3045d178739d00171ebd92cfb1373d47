@@ -1,0 +1,32 @@
+package br.com.Lista;
+
+	import java.util.Scanner;
+
+public class EX_33 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner entrada = new Scanner (System.in);
+		
+	int	vetor [] = new int [10];
+	boolean achou;
+	
+	for(int i = 0; i < vetor.length; i++){
+	
+		System.out.printf("Digite o [%d]º numero: ",i+1);
+		vetor[i] = entrada.nextInt();
+		System.out.print(vetor[i]);
+		}
+			achou = false;
+		for(int i=0; i<vetor.length; i++){
+			if(vetor[i] >=25){
+				System.out.printf("o numero [%d] na posição [%d]  e acima de 25",vetor[i], i );	
+			achou = true;
+			}else{
+				System.out.println("Nenhum numero acima de 25 encontrado\n");
+			}
+		}
+	}
+
+}
