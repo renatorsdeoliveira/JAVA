@@ -8,7 +8,7 @@ public class Lampada {
     private int garantia;
     
     
-  
+    
     public Lampada(){
     	
     }
