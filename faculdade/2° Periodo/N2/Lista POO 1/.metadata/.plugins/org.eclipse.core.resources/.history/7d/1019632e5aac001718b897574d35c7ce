@@ -1,0 +1,37 @@
+package br.com.MetodoVariavel;
+
+public class MetodoVariavel {
+
+	private int variavel_01;
+	private int variavel_02;
+	private int variavel_03;
+	private int variavel_04;
+	public int getVariavel_01() {
+		return variavel_01;
+	}
+	public void setVariavel_01(int variavel_01) {
+		this.variavel_01 = variavel_01;
+	}
+	public int getVariavel_02() {
+		return variavel_02;
+	}
+	public void setVariavel_02(int variavel_02) {
+		this.variavel_02 = variavel_02;
+	}
+	public int getVariavel_03() {
+		return variavel_03;
+	}
+	public void setVariavel_03(int variavel_03) {
+		this.variavel_03 = variavel_03;
+	}
+	public int getVariavel_04() {
+		return variavel_04;
+	}
+	public void setVariavel_04(int variavel_04) {
+		this.variavel_04 = variavel_04;
+	}
+	
+	
+}
+
+

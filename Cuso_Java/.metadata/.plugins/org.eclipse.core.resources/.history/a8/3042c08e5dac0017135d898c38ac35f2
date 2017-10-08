@@ -1,0 +1,27 @@
+package br.com.Objetos;
+
+public class Lampada {
+ 
+	private String cor;
+	private double valor;
+	private int wolts;
+    private int garantia;
+    
+    public String setCor (String cor){
+    	return cor;
+    }
+    
+    public double setValor (double valor){
+    	return valor;
+    }
+    
+    public int setWolts (double valor){
+    	return wolts;
+    }
+    public int setGarantia (int garantia){
+    	return garantia;
+    }
+    
+	
+	
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.130+C:\Users\SI\Documents\Desenvolvimento\JAVA\Cuso_Java\.metadata\.plugins\org.eclipse.jdt.core
+1853285509.index
+2443341462.index
+2965794504.index
