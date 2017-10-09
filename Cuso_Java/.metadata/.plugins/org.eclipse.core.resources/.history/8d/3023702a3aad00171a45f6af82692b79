@@ -22,7 +22,7 @@ public class Principal {
 		int garantia = in.nextInt();
 		
 		System.out.println("\n--------------------------- LAMPADA -----------------------------------------");
-		System.out.println("\nA Lampada e da cor "+o1.getCor(cor)+" do valor de "+o1.getValor(valor)+" com a voltagem de "+o1.getWolts(valor)+" com a garantide "+o1.getGarantia(garantia));
+		System.out.println("\nA Lampada e da cor "+cor+" do valor de "+valor+" com a voltagem de "+wolts+" com a garantide "+garantia);
 		
 
 	}
