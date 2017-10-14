@@ -1,0 +1,50 @@
+package br.com.Ex_01;
+
+public class Objeto {
+
+	private int inicio;
+	private int fim;
+	
+	public Objeto (){
+		
+	}
+	
+	public Objeto(int inicio, int fim){
+		this.inicio = inicio;
+		this.fim = fim;
+	}
+	
+	public int getInicio(){
+		return inicio;
+	}
+	public int getFim(){
+		return fim;
+	}
+	public String Hello (){
+		return " Bem vindos a Orientação a Objetos. ";
+	}
+	public String getImpares(){
+		String msg ="";
+		for(int i = this.inicio; i<this.fim; i++ ){
+			if(i%2!=0){
+				msg += i + " ";
+			}
+		}
+		
+		return msg;
+	}
+	
+	public String inverterString(String str)
+	{
+		String invertidaStr = "";
+		
+		for(int i = str.length()-1; i>= 0; i--)
+		{
+			invertidaStr += str.charAt(i);
+		}
+		
+		return invertidaStr;
+		
+		
+	}
+}

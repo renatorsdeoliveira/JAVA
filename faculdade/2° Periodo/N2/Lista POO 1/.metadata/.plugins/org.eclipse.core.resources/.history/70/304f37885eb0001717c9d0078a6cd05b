@@ -1,0 +1,33 @@
+package br.com.Ex_01;
+
+import java.util.Scanner;
+
+public class Objeto_Principal {
+
+	public static void main(String[] args) {
+
+			Scanner leitura = new Scanner(System.in);
+			
+			System.out.println("inicio: ");
+			int inicio = leitura.nextInt();
+			System.out.println("fim: ");
+			int fim = leitura.nextInt();
+			Objeto o1 = new Objeto(inicio, fim);
+			
+			System.out.print(o1.Hello());
+			
+			System.out.println(o1.getImpares());
+			
+			leitura.nextLine();
+			
+			System.out.println("Informe a string: ");
+			String inv = leitura.nextLine();
+			
+			System.out.println("String invertida: \n"+ o1.inverterString(inv));
+			
+			System.out.println("String invertida: \n"+ o1.inverterString("BANANA"));
+			
+		}
+
+	}
+

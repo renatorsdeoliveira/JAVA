@@ -1,0 +1,5 @@
+package br.com.MetodoVariavel;
+
+public class MetodoVariavel {
+
+}

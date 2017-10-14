@@ -1,0 +1,41 @@
+package br.com.Ex_03;
+
+public class Funcionario {
+
+	private double salario;
+	private double venda ;
+	
+	
+	public Funcionario (){
+		
+	}	
+	public Funcionario (double venda){
+		this.venda= venda;
+	}
+	public Funcionario (Double salario){
+		this.salario = salario;	
+	}	
+	
+	
+	
+	public double getVenda(){
+		return venda;
+	}
+	public double setSalario(){
+		return salario;
+	}
+		
+	public String calculaSalario(double salario){
+			
+		double acrescimo2 = venda + (177.12 * 00.387);
+		
+		if(this.venda > 8.000){
+			this.salario = 382.33 +(venda * 0.08675);		
+		}else{
+			this.salario = 382.33 +(venda * 00.387);
+		}
+			
+		return "O seu selário será"+salario;
+	}
+	
+}

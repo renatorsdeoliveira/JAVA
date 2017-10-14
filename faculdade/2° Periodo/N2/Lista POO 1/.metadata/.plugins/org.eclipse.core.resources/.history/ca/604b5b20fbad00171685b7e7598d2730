@@ -1,0 +1,21 @@
+package br.com.Ex_03;
+
+public class Funcionario {
+
+	private double salario;
+	
+	public double calculaSalario(double salario){
+		String msg ="";
+		double acrescimo = salario + 38.33 * 0.08675;
+		double acrescimo2 = salario + 177.12 * 00.387;
+		
+		if(salario > 8.000){
+			msg += acrescimo2;			
+		}else{
+			msg += acrescimo;
+		}
+			
+		return msg;
+	}
+	
+}

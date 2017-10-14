@@ -1,0 +1,21 @@
+package br.com.Ex_03;
+
+import java.util.Scanner;
+
+public class FuncionarioTeste {
+
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		Funcionario f1 = new f1 Funcionario();
+		
+		System.out.println("Digite seu Nome: ");
+		String nome = in.nextLine();
+		
+		System.out.println("Digite seu Nome: ");
+		double salario = in.nextDouble();
+		
+		System.out.println();
+	}
+
+}
