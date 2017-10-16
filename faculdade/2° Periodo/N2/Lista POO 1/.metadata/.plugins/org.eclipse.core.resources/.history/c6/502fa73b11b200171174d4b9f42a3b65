@@ -1,0 +1,10 @@
+package br.com.Ex_04;
+
+public class PrincipalQuadrado {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

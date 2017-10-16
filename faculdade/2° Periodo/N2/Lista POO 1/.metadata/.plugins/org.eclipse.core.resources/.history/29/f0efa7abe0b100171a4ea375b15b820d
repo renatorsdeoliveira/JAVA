@@ -1,0 +1,64 @@
+package br.com.Ex_05;
+
+public class Estoque {
+	
+	private String nome;
+	private int  qtdAtual;
+	private int  qtdMinima;
+	private int qdt;
+	
+	
+	public Estoque() {
+		
+	}
+	
+	public Estoque(String nome, int qtdAtual, int qtdMinima) {
+		super();
+		this.nome = nome;
+		this.qtdAtual = qtdAtual;
+		this.qtdMinima = qtdMinima;
+	}
+	
+
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public int getQtdAtual() {
+		return qtdAtual;
+	}
+	public void setQtdAtual(int qtdAtual) {
+		this.qtdAtual = qtdAtual;
+	}
+	public int getQtdMinima() {
+		return qtdMinima;
+	}
+	public void setQtdMinima(int qtdMinima) {
+		this.qtdMinima = qtdMinima;
+	}
+	public void mudarNome(String nome) {
+		
+	}
+	public void mudarQtdMinima(int qtdMinima) {
+		
+	}
+	public void repor(int qtd){
+		
+	 qtdAtual = qtdAtual + qdt;
+		
+	}
+	public void darBaixa(int qtd){
+		qtdAtual = qtdAtual- qtd;
+	}
+	public String mostra() {
+		"O nome do Produto: "+setNome+"Sua quantidade minima"+getQtdMinima+""
+	}
+	boolean precisaRepor() {
+		if (getQtdAtual() <= getQtdMinima()){
+			
+			qtdMinima = false;
+		}
+	}
+}

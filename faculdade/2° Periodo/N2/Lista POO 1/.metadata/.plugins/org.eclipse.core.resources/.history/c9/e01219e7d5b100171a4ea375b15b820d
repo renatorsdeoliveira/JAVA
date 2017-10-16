@@ -1,0 +1,10 @@
+package br.com.Ex_05;
+
+public class PrincipalEstoque {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

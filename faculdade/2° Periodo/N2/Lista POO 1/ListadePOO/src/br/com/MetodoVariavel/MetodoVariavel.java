@@ -16,7 +16,6 @@ public class MetodoVariavel {
 		this.d = d;
 	}
 	
-	
 	public int getA() {
 		return a;
 	}
@@ -48,12 +47,11 @@ public class MetodoVariavel {
 	public void  A(int a, int b, int c){
 		
 	}
-	public int B(int a, int b, int c){
+	public int B(int a, int b, int c, int d){
 		int soma;
-		return  soma = (a + b + c + d);
-	  
+		  soma = (a +b + c + d);
+		return  soma;
 	}
-
 
 
 	
