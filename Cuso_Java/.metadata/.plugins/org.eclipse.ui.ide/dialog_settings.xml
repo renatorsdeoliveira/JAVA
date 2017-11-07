@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\SI\Desktop\POO-Aula03"/>
+		<item value="G:\eclpse\ListaPOO2"/>
+		<item value="C:\Users\SI\Documents\Desenvolvimento\JAVA\faculdade\2° Periodo\N2\Lista POO 1\ListadePOO"/>
 		<item value="E:\aula3"/>
 	</list>
 </section>

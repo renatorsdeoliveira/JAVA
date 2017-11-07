@@ -1,0 +1,26 @@
+package br.com.exercicios_33_03;
+
+import java.util.Scanner;
+
+public class AunoPrincipal {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner (System.in);
+		Auno classe = new Auno();
+		
+		System.out.print("Digite seu nome:");
+		String  nome = in.nextLine();
+		
+		System.out.print("Digite o nome da Materia:");
+		String  materia = in.nextLine();
+		
+		System.out.print("Digite sua Primeira media:");
+		double n1 = in.nextDouble();
+		
+		System.out.print("Digite sua Segunda media:");
+		double n2 = in.nextDouble();
+		
+		System.out.println(classe.media(n1, n2, nome));
+	}
+
+}

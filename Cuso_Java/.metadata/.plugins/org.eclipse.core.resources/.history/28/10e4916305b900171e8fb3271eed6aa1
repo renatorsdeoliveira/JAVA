@@ -1,0 +1,37 @@
+package br.com.exercicios_33_03;
+
+import java.util.Scanner;
+
+public class AunoPrincipal {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner (System.in);
+		Auno aluno = new Auno();
+		
+		System.out.print("Digite o nome do Curso:");
+		aluno.nomeCurso = scan.nextLine();
+		
+		System.out.print("Digite seu nome:");
+		aluno.nome = scan.nextLine();
+		
+		System.out.print("Digite o numero da matricula:");
+		aluno.matricula = scan.nextInt();
+		
+		for (int i=0; i<aluno.nomeDisciplinas.length; i++ ){
+			
+		}
+		
+//		System.out.print("Digite o nome da Materia:");
+//		classe.getMateria();
+//		
+//		System.out.print("Digite sua Primeira media:");
+//		classe.getN1();
+//		
+//		System.out.print("Digite sua Segunda media:");
+//		classe.getN2() int n2 = in.nextInt();
+//		
+//		System.out.println(classe.media(n1, n2, nome));
+	}
+
+}

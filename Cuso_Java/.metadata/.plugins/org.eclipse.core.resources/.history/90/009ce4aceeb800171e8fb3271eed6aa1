@@ -1,0 +1,9 @@
+package br.com.Aulas;
+
+public class TesteCalculdora {
+
+	public static void main(String[] args) {
+		Aula_34 cal = new Aula_34();
+	}
+
+}

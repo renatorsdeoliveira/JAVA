@@ -1,0 +1,22 @@
+package br.com.exercicios_33_03;
+
+
+public class Conta {
+	
+	int numero;
+	String dono;
+	double saldo;
+	double limite;
+	
+	// ... outros atributos ...
+	
+	 void saca(double quantidade) {
+	 double novoSaldo = this.saldo - quantidade;
+	 this.saldo = novoSaldo;
+	
+	 }	
+	 
+	 void deposita(double quantidade) {
+		  this.saldo += quantidade;
+		  }
+}

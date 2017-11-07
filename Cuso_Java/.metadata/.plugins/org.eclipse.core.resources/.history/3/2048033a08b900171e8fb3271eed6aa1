@@ -1,0 +1,31 @@
+package br.com.exercicios_33_03;
+
+public class Auno {
+	
+	String nome;
+	String nomeCurso;
+	int  matricula;
+	String [] nomeDisciplinas = new String [3];
+	double [][] notaDisciplinas = new double [3][4]; 
+	
+	void mostraInfo() {
+		System.out.println("Nome: "+nome);
+		System.out.println("Matriculo: "+matricula);
+		System.out.println("Nome: "+nomeCurso);
+		
+		for (int i=0; i<nomeDisciplinas.length; i++ ){
+			System.out.println("Notas da Disciplina "+notaDisciplinas[i);
+			
+		}
+		for(int i=0; i<notaDisciplinas.length; i++){
+			System.out.println("Entre com as notas da disciplina "+nomeDisciplinas[i]);
+			for(int j=0; j<notaDisciplinas[i].length; j++){
+				System.out.println("Entre com a nota:" + (j+1));
+				
+				
+			}
+		
+	}
+    }
+}
+ 	

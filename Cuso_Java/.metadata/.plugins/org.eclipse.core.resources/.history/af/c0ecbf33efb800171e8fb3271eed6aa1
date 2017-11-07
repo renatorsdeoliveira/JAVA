@@ -1,0 +1,12 @@
+package br.com.Aulas;
+
+public class TesteCalculdora {
+
+	public static void main(String[] args) {
+		Aula_34 cal = new Aula_34();
+		
+		cal.soma(2, 2);
+		cal.soma(01, 02, 03);
+	}
+
+}

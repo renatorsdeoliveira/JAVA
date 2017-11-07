@@ -1,0 +1,12 @@
+package br.com.exercicios_33_03;
+
+public class Auno {
+	
+	String nome;
+	String materia;
+	String nomeCurso;
+	int  matricula;
+	String [] nomeDisciplinas;
+	double [][] notaDisciplinas; 
+ 	
+}

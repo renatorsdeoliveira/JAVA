@@ -1,0 +1,16 @@
+package br.com.exercicios_33_03;
+
+import javax.swing.JOptionPane;
+
+public class ContaPrincipal {
+
+	public static void main(String[] args) {
+	
+			Conta idades = new Conta();
+			
+		idades.setIdade(Integer.parseInt(JOptionPane.showInputDialog(null, "Bom dia Jorjão!!!\nDigite sua idade")));
+		
+	
+	}
+
+}

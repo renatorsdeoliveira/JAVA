@@ -1,0 +1,10 @@
+package br.com.exercicios_33_03;
+
+public class AunoPrincipal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

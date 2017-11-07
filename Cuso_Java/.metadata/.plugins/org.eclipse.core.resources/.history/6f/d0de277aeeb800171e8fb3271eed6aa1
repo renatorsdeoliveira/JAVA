@@ -1,0 +1,9 @@
+package br.com.Aulas;
+
+public class TesteCalculdora {
+
+	public static void main(String[] args) {
+		MinhaCalcuçlador cal = new MinhaCalculadora();
+	}
+
+}

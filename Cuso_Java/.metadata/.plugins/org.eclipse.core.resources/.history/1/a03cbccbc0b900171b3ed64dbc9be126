@@ -1,0 +1,46 @@
+package br.com.exercicios_33_03;
+
+
+public class Video {
+	
+	private String camera;
+	private String nomeProfessor;
+	private double duracao;
+	private boolean qualidade;
+	public String getCamera() {
+		return camera;
+	}
+	public void setCamera(String camera) {
+		this.camera = camera;
+	}
+	public String getNomeProfessor() {
+		return nomeProfessor;
+	}
+	public void setNomeProfessor(String nomeProfessor) {
+		this.nomeProfessor = nomeProfessor;
+	}
+	public double getDuracao() {
+		return duracao;
+	}
+	public void setDuracao(double duracao) {
+		this.duracao = duracao;
+	}
+	public boolean isQualidade() {
+		return qualidade;
+	}
+	public void setQualidade(boolean qualidade) {
+		this.qualidade = qualidade;
+	}
+	public Video() {
+		
+	}
+	public Video(String camera, String nomeProfessor, double duracao, boolean qualidade) {
+		this.camera = camera;
+		this.nomeProfessor = nomeProfessor;
+		this.duracao = duracao;
+		this.qualidade = qualidade;
+	}
+	
+	
+
+}
