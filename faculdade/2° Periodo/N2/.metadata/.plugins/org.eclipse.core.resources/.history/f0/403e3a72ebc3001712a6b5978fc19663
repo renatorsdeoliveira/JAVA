@@ -1,0 +1,9 @@
+package br.com.Ex_03;
+
+public class Produto {
+	
+	private int codigo;
+	private String nome;
+	
+
+}

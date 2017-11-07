@@ -1,0 +1,15 @@
+package br.com.Ex_03;
+
+import javax.swing.JOptionPane;
+
+public class Compra {
+
+	public static void main(String[] args) {
+		
+		Pessoa p1 = new Pessoa();
+		Produto moto = new Produto();
+		
+		p1.setNome( JOptionPane.showInputDialog("Digite seu nome: "));
+	}
+
+}
