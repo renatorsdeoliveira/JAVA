@@ -1,0 +1,9 @@
+package br.com.Ex_01;
+
+import java.util.ArrayList;
+
+public class Restaurante {
+
+	private ArrayList <Mesa> mesa;
+	private double faturamento;
+}

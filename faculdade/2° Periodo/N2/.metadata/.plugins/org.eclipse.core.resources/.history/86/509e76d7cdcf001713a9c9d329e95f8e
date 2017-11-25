@@ -1,0 +1,70 @@
+package br.com.Ex_03_2;
+
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+
+
+public class CompraPrincipal {
+	public static void main(String[] args) {
+		
+		ArrayList<Produto> pd = new ArrayList<Produto>();
+		ArrayList<Endereco> ed = new ArrayList<Endereco>();
+		ArrayList<Pessoa> ps = new ArrayList<Pessoa>();
+		
+		Produto produto = new Produto();
+		Pessoa pessoa = new Pessoa();
+		Compra compra = new Compra();
+		
+
+		JOptionPane.showMessageDialog(null, "\t\tBem vindo\nclique e vamos as compras!");	
+		pessoa.setNome(JOptionPane.showInputDialog("Primeiro faça seu cadastro\nDigite seu nome: "));
+		pessoa.setNumero(Integer.parseInt(JOptionPane.showInputDialog("Informe o numero:")));
+		
+		Endereco endereco = new Endereco(JOptionPane.showInputDialog("Digite seu Logradouro: "),
+		JOptionPane.showInputDialog("Digite sua Cidade: "),
+		JOptionPane.showInputDialog("Digite seu Estado: "));
+		
+
+//		
+
+		
+		pd.add(new Produto(1, "MOTO"));
+		pd.add(new Produto(2, "CARRO"));
+		
+		int op = Integer.parseInt(JOptionPane.showInputDialog("Lista produto: \n"+
+				"\n1 "+pd.get(0)+
+				"2 "+pd.get(1)));
+		
+		switch(op){
+		case 1:
+			if(op == 1) {
+				JOptionPane.showMessageDialog(null, "O produto selecionado foi: \n"+pd.get(0)+
+						"\n Dados do Solicitante: "+
+						"\n Nome: "+pessoa.getNome()+
+						"\n Logradouro: "+pessoa.getEndereco().getLogragouro()+
+						"\n Numero: "+pessoa.getNumero()+
+						"\n Cidade: "+pessoa.getEndereco().getCidade()+
+						"\n Estado: "+pessoa.getEndereco().getEstado());
+			break;
+			}		case 2:
+			if(op == 2) {
+				JOptionPane.showMessageDialog(null, "O produto selecionado foi: \n"+pd.get(0)+
+						"\n Dados do Solicitante: "+
+						"\n Nome: "+pessoa.getNome()+
+						"\n Logradouro: "+pessoa.getEndereco().getLogragouro()+
+						"\n Numero: "+pessoa.getNumero()+
+						"\n Cidade: "+pessoa.getEndereco().getCidade()+
+						"\n Estado: "+pessoa.getEndereco().getEstado());
+			break;
+			}
+		default :
+			JOptionPane.showMessageDialog(null, "Esta opção não e Valida!");
+			break;	
+		}
+	
+		
+	}
+
+}

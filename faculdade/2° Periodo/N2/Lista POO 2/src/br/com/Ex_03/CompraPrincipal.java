@@ -1,68 +1,58 @@
 package br.com.Ex_03;
 
-import javax.swing.JOptionPane;
+import java.util.ArrayList;
 
-import br.com.Ex_03.Pessoa;
-import br.com.Ex_03.Produto;
+import javax.swing.JOptionPane;
 
 public class CompraPrincipal {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
+		ArrayList<Produto> pd = new ArrayList<Produto>();
+		ArrayList<Endereco> ed = new ArrayList<Endereco>();
+		ArrayList<Pessoa> ps = new ArrayList<Pessoa>();
+
+		JOptionPane.showMessageDialog(null, "\t\tBem vindo\nclique e vamos as compras!");	
+		Pessoa pessoa= new Pessoa(JOptionPane.showInputDialog("Primeiro faça seu cadastro\nDigite seu nome: "),
+				Integer.parseInt(JOptionPane.showInputDialog("Digite seu numero")));
+		Endereco enden =new Endereco(JOptionPane.showInputDialog("Digite o logradouro:"),
+				JOptionPane.showInputDialog("Informe a cidade: "), JOptionPane.showInputDialog("Digite o Estado: "));
+		pessoa.setEndereco(enden);
 		
-		String aux1, aux;
-		int op = 0 ,op1 = 0;
-		Produto p1 = new Produto(01, "MOTO");
-		Produto p2 = new Produto(02, "CARRO");
 		
-		Pessoa pessoa1 = new Pessoa();
+		JOptionPane.showMessageDialog(null, "Cadastro realizado!");
 		
-		do {
-		pessoa1.setNome(JOptionPane.showInputDialog("Informe seu nome: "));
-		pessoa1.setEndereço(JOptionPane.showInputDialog("Informe seu endereço: "));
-		pessoa1.setNumero(Integer.parseInt(JOptionPane.showInputDialog("Informe seu número: ")));
+		pd.add(new Produto(1, "     MOTO      :      $4,000 "));
+		pd.add(new Produto(2, "    CARRO     :      $25,000"));
 		
-		op1 = Integer.parseInt(JOptionPane.showInputDialog("1º Opção: 'MOTO' \n2º Opção: 'CARRO'\n Escolha uma opção:"));
+		JOptionPane.showMessageDialog(null, "Clique no Botão e vamos as compras");
+		int op = Integer.parseInt(JOptionPane.showInputDialog("ESCOLHA O PROTUDO DESEJADO: \n "+pd.get(0)+" "+pd.get(1)));
 		
-		switch (op1) {
 		
-		case 1:
-			JOptionPane.showMessageDialog(null, "Nome: "+ pessoa1.getNome()+"\n");
-			JOptionPane.showMessageDialog(null, "Endereço: "+ pessoa1.getEndereço()+"\n");
-			JOptionPane.showMessageDialog(null, "Número: "+ pessoa1.getNumero()+"\n");
+		
+			if(op == 1) {
+				JOptionPane.showMessageDialog(null, "O produto selecionado foi: \n"+pd.get(0)+
+						"\n Nome: "+pessoa.getNome()+
+						"\n Logradouro: "+pessoa.getEndereco().getLogradouro()+
+						"\n Numero: "+pessoa.getNumero()+
+						"\n Cidade: "+pessoa.getEndereco().getCidade()+
+						"\n Estado: "+pessoa.getEndereco().getEstado());
 			
-			JOptionPane.showMessageDialog(null, "Produto escolhido: "+ p1.getNomeProduto());
-		
-			aux = p1.getNomeProduto();
-		
+			} else if(op == 2) {
+				JOptionPane.showMessageDialog(null, "O produto selecionado foi: \n"+pd.get(1)+
+						"\n Dados do Solicitante: "+
+						"\n Nome: "+pessoa.getNome()+
+						"\n Logradouro: "+pessoa.getEndereco().getLogradouro()+
+						"\n Numero: "+pessoa.getNumero()+
+						"\n Cidade: "+pessoa.getEndereco().getCidade()+
+						"\n Estado: "+pessoa.getEndereco().getEstado());
 			
-			op =  (JOptionPane.showConfirmDialog(null, "Seu nome é :"+pessoa1.getNome()+ "\n"
-					+"Você está comprando, "+ aux+"\n"+
-					"Deseja comfirmar sua compra?"));
-			
-			JOptionPane.showMessageDialog(null, "Compra finalizada com sucesso, você acaba de comprar um "+aux);
-			
-			break;
-		case 2:
-			JOptionPane.showMessageDialog(null, "Nome: "+ pessoa1.getNome()+"\n");
-			JOptionPane.showMessageDialog(null, "Endereço: "+ pessoa1.getEndereço()+"\n");
-			JOptionPane.showMessageDialog(null, "Número: "+ pessoa1.getNumero()+"\n");
-			
-			JOptionPane.showMessageDialog(null, "Produto escolhido: "+ p2.getNomeProduto());
+			}else{
 		
-			aux1 = p2.getNomeProduto();
+			JOptionPane.showMessageDialog(null, "Está opção não e Valida");
+			}
+			Compra compra = new Compra ();
 			
-			op =  (JOptionPane.showConfirmDialog(null, "Seu nome é :"+pessoa1.getNome()+ "\n"
-					+"Você está comprando, "+ aux1+"\n"+
-					"Deseja comfirmar sua compra?"));
-			
-			JOptionPane.showMessageDialog(null, "Compra finalizada com sucesso, sua compra foi: "+aux1);
-		
-			break;
-		}
-		
-				
-		}while(op == 1);
-		
+			compra.verificaCompra();
 	}
 
 }

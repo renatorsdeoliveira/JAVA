@@ -1,0 +1,26 @@
+package br.com.heranca;
+
+public class DespachoDinamico {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A obj1 = new B();
+		obj1.chameme();
+	}
+	
+	
+	public static class A {
+		void chameme() {
+			System.out.println("Dentro do método chameme de A");
+		}
+	}
+
+	public static class B extends A {
+		void chameme( ) {
+		   System.out.println("Dentro do método chameme de B");
+		 }
+	}
+
+
+}
+

@@ -1,0 +1,59 @@
+package br.com.Ex_03_2;
+
+import javax.swing.JOptionPane;
+
+public class Compra {
+
+	private Pessoa pessoa;
+	private Produto produto;
+	public Compra(Pessoa pessoa, Produto produto) {
+		super();
+		this.pessoa = pessoa;
+		this.produto = produto;
+	}
+	public Compra() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Pessoa getPessoa() {
+		return pessoa;
+	}
+	public void setPessoa(Pessoa pessoa) {
+		this.pessoa = pessoa;
+	}
+	public Produto getProduto() {
+		return produto;
+	}
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
+	
+	public void compra(Pessoa pessoa, Produto produto){
+		Produto prod1 = new Produto();
+		Produto prod2 = new Produto();	
+		prod1.setNome("Moto");
+		prod2.setNome("Carro");
+		int escolha;
+		do{
+			 escolha = Integer.parseInt(JOptionPane.showInputDialog("\tESCOLHA UM PRODUTO\n1 Moto\n2 Carro"));
+			if(escolha ==1){
+				JOptionPane.showMessageDialog(null, "Você está comprando uma\nAno: 1900\nValor 50.000 ");
+			}else if (escolha ==2){
+				JOptionPane.showMessageDialog(null, "Você está comprando uma\nAno: 1900\nValor 50.000 ");
+			}else{
+				JOptionPane.showMessageDialog(null, "Sua Escolha não foi encontrada, tente novamente ");
+	
+			}
+		
+		}while(escolha != 1 & escolha != 2);
+	}
+	public void verificarCompra(){
+		Produto prod1 = new Produto();
+		int finalizar;
+		finailzar = Integer.parseInt(JOptionPane.showInputDialog( "Deseja continuar a compra"));	
+		
+		if()
+		
+	}
+}
+

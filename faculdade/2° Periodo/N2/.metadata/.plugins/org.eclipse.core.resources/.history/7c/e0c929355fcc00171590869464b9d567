@@ -1,0 +1,24 @@
+package br.com.Ex_01;
+
+import java.util.ArrayList;
+
+public class RestaurantePrincipal {
+
+	public static void main(String[] args) {
+		
+		Restaurante restaurate = new Restaurante();
+		Pedido Pedidos = new Pedido();
+		Mesa mesa = new  Mesa();
+		ArrayList <Mesa> mesas = new ArrayList<Mesa>();
+		
+	
+		mesa.setNumero(1);
+		mesa.setCliente("Lucas Espdilha");
+		
+	   mesas.add(mesa);
+	   	
+	  System.out.println(mesa);
+		
+	}
+
+}

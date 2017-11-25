@@ -3,33 +3,31 @@ package br.com.Ex_03;
 public class Produto {
 
 	private long codigo;
-	private String nomeProduto;
+	private String nome_produto;
 	
-	
-	public Produto (long codigo, String nomeProduto) {
-		
+	public Produto(long codigo, String nome) {
+		super();
 		this.codigo = codigo;
-		this.nomeProduto = nomeProduto;
+		this.nome_produto = nome;
 	}
 	
+	@Override
+	public String toString() {
+		
+		return " \n " + getCodigo()+ "" + getNome();
+	}
+
 	public long getCodigo() {
 		return codigo;
 	}
 	public void setCodigo(long codigo) {
 		this.codigo = codigo;
 	}
-	public String getNomeProduto() {
-		return nomeProduto;
+	public String getNome() {
+		return nome_produto;
 	}
-	public void setNomeProduto(String nomeProduto) {
-		this.nomeProduto = nomeProduto;
-	}
-	
-	
-	public String consultaNomeProduto() {
-		
-		return nomeProduto;
-		
+	public void setNome(String nome) {
+		this.nome_produto = nome;
 	}
 	
 	

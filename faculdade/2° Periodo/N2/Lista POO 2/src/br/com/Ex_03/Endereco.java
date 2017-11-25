@@ -1,24 +1,20 @@
 package br.com.Ex_03;
 
 public class Endereco {
+	
+	private String logradouro;
+	private String cidade;
+	private String estado;
 
-	private String logradouro, cidade, estado;
-	
-	
-	public Endereco (String logradouro, String cidade, String estado) {
-		
+	public Endereco(String logradouro, String cidade, String estado) {
+		super();
 		this.logradouro = logradouro;
 		this.cidade = cidade;
 		this.estado = estado;
 	}
-	
-	public Endereco(){
-		
-		
+	public Endereco() {
+		super();
 	}
-	
-	
-	
 	public String getLogradouro() {
 		return logradouro;
 	}
@@ -37,9 +33,5 @@ public class Endereco {
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
- public String consultaLogradouro(){
-
-	 return logradouro;	
- }
 	
 }

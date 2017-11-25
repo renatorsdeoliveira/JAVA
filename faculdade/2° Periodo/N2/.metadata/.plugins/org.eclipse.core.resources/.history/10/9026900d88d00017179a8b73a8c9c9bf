@@ -1,0 +1,96 @@
+package br.com.EX_04;
+
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+import EX4.Dado;
+import EX4.Pessoa;
+
+public class Confronto {
+
+	public static void main(String[] args) {
+
+		Dado d = new Dado(6);
+		
+		int dado1 = 0, dado2 = 0;
+		int opcao;
+		ArrayList <Pessoa> ListaDePessoas = new ArrayList <Pessoa>();
+
+		Pessoa ps = new Pessoa();
+		Pessoa pss = new Pessoa();
+		Pessoa ps3 = new Pessoa();
+		Pessoa ps4 = new Pessoa();
+		Pessoa ps5 = new Pessoa();
+		Pessoa ps6 = new Pessoa();
+		
+		ListaDePessoas.add(ps);
+		ListaDePessoas.add(pss);
+
+		dado1 = ps.jogarDado8Faces();
+		dado1 = ps.jogarDado6Faces();
+		dado2 = pss.jogarDado6Faces();
+		dado2 = pss.jogarDado8Faces();
+		dado1 = ps3.jogarDado8Faces();
+		dado1 = ps3.jogarDado6Faces();
+		dado2 = ps4.jogarDado6Faces();
+		dado2 = ps4.jogarDado8Faces();
+		dado1 = ps5.jogarDado8Faces();
+		dado1 = ps5.jogarDado6Faces();
+		dado2 = ps6.jogarDado6Faces();
+		dado2 = ps6.jogarDado8Faces();
+
+		
+		
+//		 Data dt = new Data();
+//		 JOptionPane.showMessageDialog(null, "ENTRO COM AS INFORMAÇÕES DO jOGO");
+//		 dt.setDia(Integer.parseInt(JOptionPane.showInputDialog("Digite o Dia do Confronto: ")));
+//		 dt.setMes(Integer.parseInt(JOptionPane.showInputDialog("Digite o Mês do Confronto: ")));
+//		 dt.setAno(Integer.parseInt(JOptionPane.showInputDialog("Digite o Ano de Confronto: ")));
+//		 Endereco ed = new Endereco();
+//		 JOptionPane.showMessageDialog(null,"CADATRE O ENDEREÇO CO CONFRONTO ");
+//		 ed.setNomeRua(JOptionPane.showInputDialog("Digite o Nome da Rua: "));
+//		 ed.setBairro(JOptionPane.showInputDialog("Digite o Nome do Bairro: "));
+//		 ed.setCidade(JOptionPane.showInputDialog("Digite o nome da Cidade: "));
+//		 ed.setCep(Integer.parseInt(JOptionPane.showInputDialog("Digite CEP: ")));
+		 JOptionPane.showMessageDialog(null, "Participantes");
+		 ps.setNome(JOptionPane.showInputDialog("Digite o nome do 1º Participante: "));
+		 pss.setNome(JOptionPane.showInputDialog("Digite o nome do 2º Partipante: "));
+		 JOptionPane.showMessageDialog(null, "PRIMEIRO CONFRONTO\n"+ps.getNome()+" VS "+pss.getNome());
+		 
+		 ps3.setNome(JOptionPane.showInputDialog("Digite o nome do 3º Participante: "));
+		 ps4.setNome(JOptionPane.showInputDialog("Digite o nome do 4º Partipante: "));
+		 JOptionPane.showMessageDialog(null, "SEGUNDO CONFRONTO\n"+ps3.getNome()+" VS "+ps4.getNome());
+		 
+		 ps5.setNome(JOptionPane.showInputDialog("Digite o nome do 5º Participante: "));
+		 ps6.setNome(JOptionPane.showInputDialog("Digite o nome do 6º Partipante: "));
+		 JOptionPane.showMessageDialog(null, "TERCEIRO CONFRONTO\n"+ps5.getNome()+" VS "+ps3.getNome());
+		 
+		 JOptionPane.showMessageDialog(null, (ps.getNome()+" Tirou "  + ps.jogarDado6Faces())+" e "+ps.jogarDado8Faces());
+		 JOptionPane.showMessageDialog(null, (pss.getNome()+" Tirou "  + pss.jogarDado6Faces())+" e "+pss.jogarDado8Faces());
+		 JOptionPane.showMessageDialog(null, (ps3.getNome()+" Tirou "  + ps3.jogarDado6Faces())+" e "+ps3.jogarDado8Faces());
+		 JOptionPane.showMessageDialog(null, (ps4.getNome()+" Tirou "  + ps4.jogarDado6Faces())+" e "+ps4.jogarDado8Faces());
+		 JOptionPane.showMessageDialog(null, (ps5.getNome()+" Tirou "  + ps5.jogarDado6Faces())+" e "+ps5.jogarDado8Faces());
+		 JOptionPane.showMessageDialog(null, (ps6.getNome()+" Tirou "  + ps6.jogarDado6Faces())+" e "+ps6.jogarDado8Faces());
+		
+//		int pjogador = ps.jogarDado6Faces()+ ps.jogarDado8Faces();
+//		JOptionPane.showMessageDialog(null,pjogador );
+//		int sjogador = pss.jogarDado6Faces()+ pss.jogarDado8Faces();
+//		JOptionPane.showMessageDialog(null,sjogador );
+	//	
+//		do{
+//			ListaDePessoas.add(new Pessoa(JOptionPane.showInputDialog("Informe o nome: "), d));
+//			
+//			opcao = JOptionPane.showConfirmDialog(null, "Deseja continuar?");
+//			
+//		}while(opcao == 0);
+	//	
+//		for(Pessoa p : ListaDePessoas)
+//		{
+//			JOptionPane.showMessageDialog(null, (p.getNome()+" rodou "  + p.jogarDado6Faces()));
+//		}
+		}
+
+	}
+
+}

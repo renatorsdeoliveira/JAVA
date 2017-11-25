@@ -1,0 +1,10 @@
+package br.com.EX_04;
+
+public class Confronto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="workspace/Class/src"/>
+	<classpathentry kind="src" path="workspace/EXERCICIOS/src"/>
+	<classpathentry kind="src" path="workspace/LISTA_DE_EXERCICIOS_N1/src"/>
+	<classpathentry kind="src" path="workspace/MetodoVariavel/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="workspace/Class/bin"/>
+</classpath>

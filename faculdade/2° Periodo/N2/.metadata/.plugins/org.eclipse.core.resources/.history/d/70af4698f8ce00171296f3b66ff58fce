@@ -1,0 +1,29 @@
+package br.com.Ex_03_2;
+
+import javax.swing.JOptionPane;
+
+public class CompraPrincipal {
+	public static void main(String[] args) {
+		
+		Endereco end = new Endereco();
+		Produto produto = new Produto();
+		Pessoa ps = new Pessoa();
+		Compra compra = new Compra();
+		
+
+		JOptionPane.showMessageDialog(null, "\t\tBem vindo\nclique e vamos as compras!");	
+		ps.setNome(JOptionPane.showInputDialog("Primeiro faça seu cadastro\nDigite seu nome: "));
+		end.setLogragouro(JOptionPane.showInputDialog("Digite seu Logradouro: "));
+		end.setCidade(JOptionPane.showInputDialog("Digite sua Cidade: "));
+		end.setEstado(JOptionPane.showInputDialog("Digite seu Estado: "));
+		 
+		
+		compra.compra(ps, produto);
+		compra.verificarCompra();
+		
+		
+		
+		
+	}
+
+}

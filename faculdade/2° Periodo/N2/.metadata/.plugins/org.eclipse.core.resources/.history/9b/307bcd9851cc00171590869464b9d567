@@ -1,0 +1,10 @@
+package br.com.Ex_01;
+
+import java.util.ArrayList;
+
+public class Mesa {
+	private int numero;
+	private String cliente;
+	private ArrayList <Pedido> pedido;
+	
+}

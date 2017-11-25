@@ -1,0 +1,42 @@
+package br.com.Ex_03_2;
+
+public class Pessoa {
+	
+	private String nome;
+	private Endereco endereco;
+	private int numero;
+	
+	public Pessoa(String nome, Endereco endereco, int numero) {
+		super();
+		this.nome = nome;
+		setEndereco(endereco);
+		this.numero = numero;
+	}
+	public Pessoa() {
+		
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public Endereco getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+	public int getNumero() {
+		return numero;
+	}
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public void consultaEndereco (){
+		
+	}
+	public void consultaNome (){
+		
+	}
+}

@@ -1,0 +1,38 @@
+package br.com.Ex_03_2;
+
+public class Endereco {
+	
+	private String logragouro;
+	private String cidade;
+	private String estado;
+	public Endereco(String logragouro, String cidade, String estado) {
+		super();
+		this.logragouro = logragouro;
+		this.cidade = cidade;
+		this.estado = estado;
+	}
+	public Endereco() {
+		super();
+		
+	}
+	public String getLogragouro() {
+		return logragouro;
+	}
+	public void setLogragouro(String logragouro) {
+		this.logragouro = logragouro;
+	}
+	public String getCidade() {
+		return cidade;
+	}
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
+	public String getEstado() {
+		return estado;
+	}
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+	
+	
+}

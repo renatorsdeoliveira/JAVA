@@ -1,0 +1,43 @@
+package br.com.Ex_03_2;
+
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+
+
+public class CompraPrincipal {
+	public static void main(String[] args) {
+		
+		ArrayList<Produto> pd = new ArrayList<Produto>();
+		ArrayList<Endereco> ed = new ArrayList<Endereco>();
+		ArrayList<Pessoa> ps = new ArrayList<Pessoa>();
+		
+		Produto produto = new Produto();
+		Pessoa pessoa = new Pessoa();
+		Compra compra = new Compra();
+		
+
+		JOptionPane.showMessageDialog(null, "\t\tBem vindo\nclique e vamos as compras!");	
+		pessoa.setNome(JOptionPane.showInputDialog("Primeiro faça seu cadastro\nDigite seu nome: "));
+		pessoa.setNumero(Integer.parseInt(JOptionPane.showInputDialog("Informe o numero:")));
+		
+		Endereco endereco = new Endereco(JOptionPane.showInputDialog("Digite seu Logradouro: "),
+		JOptionPane.showInputDialog("Digite sua Cidade: "),
+		JOptionPane.showInputDialog("Digite seu Estado: "));
+		
+		compra.compra(pessoa, produto);
+		compra.verificarCompra();
+		
+		
+		pd.add(new Produto(123, "teclado"));
+		pd.add(new Produto(145, "Projetor"));
+		
+		
+		
+		JOptionPane.showMessageDialog(null,pessoa.getNome() +"%"+pd.size()+"%"+endereco.getEstado());
+		
+		
+	}
+
+}

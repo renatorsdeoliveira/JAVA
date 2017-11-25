@@ -1,0 +1,48 @@
+package br.com.heranca;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Professor pr = new Professor("Luiz Mário", 27, "C.C");
+		Turma ip = new Turma("Introdução a Programação", pr);
+		Turma poo = new Turma("Programação Orientada a Objeto", pr);
+		Object[] opcTurma = {"IP", "POO"};
+		
+		int opc;
+		do{
+
+			String nome = JOptionPane.showInputDialog("Informe seu nome: ");
+			int idade = Integer.parseInt(JOptionPane.showInputDialog("Informe sua idade: "));
+			
+			Aluno a = new Aluno(nome, idade, "S.I");
+			
+			Object opT = JOptionPane.showOptionDialog(null, "Escolha Turma", "Turma", 0, 1, null, opcTurma, opcTurma[0]);
+
+			if(opT.equals(0))
+			{
+				ip.adicionaAluno(a);
+			}
+			else{
+				poo.adicionaAluno(a);
+			}
+			
+		opc = JOptionPane.showConfirmDialog(null, "Deseja continuar?");
+		
+//		if (opc != 0){
+//			JOptionPane.showMessageDialog(null, "Informe ao menos 3 alunos.");
+//		}
+		
+	}while( opc == 0 );
+		
+		JOptionPane.showMessageDialog(null, ip);
+		JOptionPane.showMessageDialog(null, poo);
+		
+		
+
+	}
+
+}

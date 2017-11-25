@@ -1,0 +1,8 @@
+package br.com.Ex_01;
+
+public class Pedido {
+
+	private String nome;
+	private double valor;
+	
+}

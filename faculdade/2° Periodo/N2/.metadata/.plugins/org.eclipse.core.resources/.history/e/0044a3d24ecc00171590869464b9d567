@@ -1,0 +1,55 @@
+package br.com.Ex_03;
+
+public class Pessoa {
+
+	private String nome;
+	private Endereco endereço;
+	private int numero;
+	
+	public Pessoa (String nome, String endereço, int numero) {
+		
+		this.nome = nome;
+		this.endereço = endereço;
+		this.numero = numero;
+	}
+	
+	public Pessoa(){
+		
+		
+	}
+
+	public Pessoa(String nome, Endereco endereço, int numero) {
+		super();
+		this.nome = nome;
+		this.endereço = endereço;
+		this.numero = numero;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Endereco getEndereço() {
+		return endereço;
+	}
+
+	public void setEndereço(Endereco endereço) {
+		this.endereço = endereço;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	
+	
+
+	
+}
