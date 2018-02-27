@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Família Oliveira\Documents\ED-Aula01"/>
+		<item value="G:\Nova pasta\aula 16_02_2018"/>
+		<item value="C:\Users\Família Oliveira\Documents\DESENVOLVIMENTO\UML"/>
+		<item value="C:\Users\Família Oliveira\Documents\DESENVOLVIMENTO\UML\ListOne"/>
+		<item value="G:\Aluno"/>
+		<item value="C:\Users\Família Oliveira\Desktop\LstaUm"/>
+	</list>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+</section>

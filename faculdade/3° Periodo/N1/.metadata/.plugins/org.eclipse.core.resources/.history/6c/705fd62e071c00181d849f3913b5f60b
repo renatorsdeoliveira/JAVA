@@ -1,0 +1,13 @@
+package br.com.controle;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+	
+	public static void main(String[] args) {
+
+		Pais pais = new Pais();
+		JOptionPane.showInputDialog("Digite o nome de um Pais: ");
+	}
+
+}

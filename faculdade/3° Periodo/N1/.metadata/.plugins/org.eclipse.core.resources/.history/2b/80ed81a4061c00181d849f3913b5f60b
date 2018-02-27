@@ -1,0 +1,34 @@
+package br.com.modelo;
+
+import java.awt.List;
+import java.util.ArrayList;
+
+public class Pais {
+
+	private String nome;
+	private String capital;
+	private int metrosQudrados;
+	private  ArrayList<Pais> vizinhos = new ArrayList<>();
+	
+	public Pais(String nome, String capital, int metrosQudrados ) {
+		super();
+		this.nome = nome;
+		this.capital = capital;
+		this.metrosQudrados = metrosQudrados;
+		
+	}
+	
+	public Pais(String nome, String capital, int metrosQudrados, ArrayList<Pais> vizinhos) {
+		super();
+		this.nome = nome;
+		this.capital = capital;
+		this.metrosQudrados = metrosQudrados;
+		this.vizinhos = vizinhos;
+	}
+	
+	public Pais(){
+		
+	}
+
+	
+}

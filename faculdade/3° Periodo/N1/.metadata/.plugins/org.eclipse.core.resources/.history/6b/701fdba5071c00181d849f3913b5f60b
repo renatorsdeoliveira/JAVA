@@ -1,0 +1,18 @@
+package br.com.controle;
+
+import javax.swing.JOptionPane;
+
+import br.com.modelo.Pais;
+
+
+
+public class Principal {
+	
+	public static void main(String[] args) {
+		
+		Pais pais = new Pais();
+		
+		pais.setNome(JOptionPane.showInputDialog("Digite o nome de um Pais: "));
+		pais.setCapital(JOptionPane.showInputDialog("Digite o nome Capital"));
+
+}

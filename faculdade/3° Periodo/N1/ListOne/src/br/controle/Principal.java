@@ -30,25 +30,60 @@ public class Principal {
 				}
 			} while (aluno.getN2() < 0 || aluno.getN2() > 10);
 
-//			JOptionPane.showMessageDialog(null, aluno);
+			JOptionPane.showMessageDialog(null, aluno);
 			alunoList.add(aluno);
-			
-			
+
 			confirme = JOptionPane.showConfirmDialog(null, "Desejo Continuar");
 		} while (confirme != 1);
+		
+		
+		
+		
+		
+		int menu = apresentaMenu();
+		do {
+			
+		
+		
+		switch (menu) {
+		case 0:
+			JOptionPane.showMessageDialog(null, "Saindo do Programa ...");
+			break;
 
+		default:
+			break;
+		}
+		} while (menu != 0);
+	
 		String msg = " ";
 		for (Aluno alunosFor : alunoList) {
-//			JOptionPane.showMessageDialog(null, aluno);
-			if (aluno.calculaMedia() < 6.0) {
+			 JOptionPane.showMessageDialog(null, aluno);
+			if (alunosFor.calculaMedia() < 6.0) {
 
-				msg += aluno + "\nSituacao: Reprovado\n";
+				msg += alunosFor + "\nSituacao: Reprovado\n";
 			} else {
-				msg += aluno + "\nSituacao: Aprovado\n";
+				msg += alunosFor + "\nSituacao: Aprovado\n";
 
 			}
 		}
 		JOptionPane.showMessageDialog(null, msg);
 	}
 
+	private static int apresentaMenu() {
+		
+		
+			
+		JOptionPane.showInputDialog("----- Iformações -----\n"
+				+ "0 - Sair"
+				+"1 - Lista de Alunos"
+				+"2 - Aluno Aprovados"
+				+"3 - Busca por nome"
+				+"4 - Lista ordenada por media");
+		int menu;
+	
+
+		return 0;
+	}
+  
+ 
 }

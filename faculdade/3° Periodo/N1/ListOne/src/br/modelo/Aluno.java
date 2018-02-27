@@ -19,7 +19,7 @@ package br.modelo;
 		 this.matricula = matricula;
 		 this.n1 = n1;
 		 this.n2 = n2;
-	 }
+	 }	
 	 
 	
 	 public String getNome(){
@@ -57,8 +57,6 @@ package br.modelo;
 	public double calculaMedia(){
 		double media = (n1 +n2)/2;
 		return media;
-		
-		
 	}
 	
 	public String toString(){

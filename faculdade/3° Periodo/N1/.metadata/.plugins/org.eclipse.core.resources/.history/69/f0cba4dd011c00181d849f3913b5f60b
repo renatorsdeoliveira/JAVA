@@ -1,0 +1,91 @@
+package br.controle;
+
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+import br.modelo.Aluno;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		Aluno aluno = new Aluno();
+		ArrayList<Aluno> alunoList = new ArrayList<Aluno>();
+		int confirme;
+
+		do {
+			aluno.setNome(JOptionPane.showInputDialog(null, "Digite o nome do Aluno:"));
+			aluno.setMatricula(JOptionPane.showInputDialog("Digite o Numero da sua Matricula: "));
+			do {
+				aluno.setN1(Double.parseDouble(JOptionPane.showInputDialog("Digite a primeira Media:")));
+				if (aluno.getN1() < 0 || aluno.getN1() > 10.0) {
+					JOptionPane.showMessageDialog(null, "Nota Invalida, tente Novamente!");
+				}
+			} while (aluno.getN1() < 0 || aluno.getN1() > 10.0);
+			do {
+				aluno.setN2(Double.parseDouble(JOptionPane.showInputDialog("Digite a Segunda Media:")));
+				if (aluno.getN2() < 0 || aluno.getN2() > 10) {
+					JOptionPane.showMessageDialog(null, "Nota Invalida, tente Novamente!");
+				}
+			} while (aluno.getN2() < 0 || aluno.getN2() > 10);
+
+			JOptionPane.showMessageDialog(null, aluno);
+			alunoList.add(aluno);
+
+			confirme = JOptionPane.showConfirmDialog(null, "Desejo Continuar");
+		} while (confirme != 1);
+		
+		
+		
+		
+		
+		int menu = apresentaMenu();
+		do {
+			
+		
+		
+		switch (menu) {
+		case 0:
+			JOptionPane.showMessageDialog(null, "Saindo do Programa ...");
+			break;
+
+		default:
+			break;
+		}
+		} while (menu != 0);
+	
+		String msg = " ";
+		for (Aluno alunosFor : alunoList) {
+			 JOptionPane.showMessageDialog(null, aluno);
+			if (alunosFor.calculaMedia() < 6.0) {
+
+				msg += alunosFor + "\nSituacao: Reprovado\n";
+			} else {
+				msg += alunosFor + "\nSituacao: Aprovado\n";
+
+			}
+		}
+		JOptionPane.showMessageDialog(null, msg);
+	}
+
+	private static int apresentaMenu() {
+		
+		
+			
+		JOptionPane.showInputDialog("----- Iformações -----\n"
+				+ "0 - Sair"
+				+"1 - Lista de Alunos"
+				+"2 - Aluno Aprovados"
+				+"3 - Busca por nome"
+				+"4 - Lista ordenada por media");
+		int menu;
+		do {
+			
+		} while (menu <0 || menu >4 );
+
+		return 0;
+	}
+  
+ 
+}
