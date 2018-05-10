@@ -1,0 +1,17 @@
+package br.comSelectionSort;
+
+import javax.swing.JOptionPane;
+
+public class SelectionSort {
+	public static void main(String[] args) {
+			
+		
+		int a = Integer.parseInt(JOptionPane.showInputDialog("Digte o valor de [A]"));
+		int n = Integer.parseInt(JOptionPane.showInputDialog("Digte o valor de [n]"));
+		
+		for (int i = 0; i < args.length; i++) {
+			
+		}
+		
+	}
+}

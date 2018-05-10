@@ -4,16 +4,11 @@ public class CursoEspecializado extends Curso{
 	
 	private boolean latosansu;
 	private double adicionalDiploma;
-	
-	
-	
-	
-	
+
 	public CursoEspecializado(boolean latosansu, double adicionalDiploma, double ValorTotal) {
 		super();
 		this.latosansu = latosansu;
 		this.adicionalDiploma = adicionalDiploma;
-		
 		
 	}
 
@@ -42,23 +37,24 @@ public class CursoEspecializado extends Curso{
 	public void setAdicionalDiploma(double adicionalDiploma) {
 		this.adicionalDiploma = adicionalDiploma;
 	}
-	
+		
 	public void adicional (){
 		
 		double valor = 0;
-		if (getQuantiadeAlunos() > 0 || getQuantiadeAlunos() < 10){
-			valor =  (getQuantiadeAlunos() * 25) + getValorCurso();
-		} else if (getQuantiadeAlunos() < 30){
-			valor =  (getQuantiadeAlunos() * 20) + getValorCurso();
-		} else if (getQuantiadeAlunos() > 30){
-			valor =  (getQuantiadeAlunos() * 18) + getValorCurso();
+		if (getQuantiadeAlunos() > 0 || getQuantiadeAlunos() <=10){
+			valor =  (getQuantiadeAlunos() * 25);
+		} else if (getQuantiadeAlunos() <=30){
+			valor =  (getQuantiadeAlunos() * 20);
+		} else if (getQuantiadeAlunos() >30){
+			valor =  (getQuantiadeAlunos() * 18);
 		}
-		 setValorTotal(valor);
+		setAdicionalDiploma(valor);
+		setValorTotal(valor + getValorCurso());
 	}
 
 	@Override
 	public String toString() {
-		return "------- CursoEspecializado -------\n"
+		return "------- Curso Especializado -------\n"
 		
 				
 				
@@ -70,7 +66,7 @@ public class CursoEspecializado extends Curso{
 				+ "\nValor do Curso: "+ getValorCurso() 
 //				+ "\nisLatosansu()=" + isLatosansu()
 				+ "\nQuantidade de Alunos: " + getQuantiadeAlunos()
-//				+ "\nAdicional da disciplina: " + getAdicionalDiploma()
+				+ "\nValor adicionado: " + getAdicionalDiploma()
 				+ "\nValor Total: " + getValorTotal();
 				
 	}

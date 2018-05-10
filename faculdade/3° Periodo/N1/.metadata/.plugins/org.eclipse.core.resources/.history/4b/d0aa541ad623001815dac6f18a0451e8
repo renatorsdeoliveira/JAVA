@@ -1,0 +1,125 @@
+package br.com.CursoModelo;
+
+public class CursoDoutordo extends Curso{
+	
+	private boolean strictoSensu;
+	private int mesesParaDefesa;
+	private double adicionalDiploma;
+	private int quantidadeAlunos;
+	private double somatorio;
+	
+
+	
+	public CursoDoutordo(boolean strictoSensu, int mesesParaDefesa, double adicionalDiploma, double somatorio) {
+		super();
+		this.strictoSensu = strictoSensu;
+		this.mesesParaDefesa = mesesParaDefesa;
+		this.adicionalDiploma = adicionalDiploma;
+		this.somatorio  = somatorio;
+	}
+
+	public CursoDoutordo() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public CursoDoutordo(int codigo, int cargaHoraria, int sala, int quantiadeAlunos, String nome, double valorCurso,
+			double valorTotal) {
+		super(codigo, cargaHoraria, sala, quantiadeAlunos, nome, valorCurso, valorTotal);
+		// TODO Auto-generated constructor stub
+	}
+
+	public boolean isStrictoSensu() {
+		return strictoSensu;
+	}
+
+	public void setStrictoSensu(boolean strictoSensu) {
+		this.strictoSensu = strictoSensu;
+	}
+
+	public int getMesesParaDefesa() {
+		return mesesParaDefesa;
+	}
+
+	public void setMesesParaDefesa(int mesesParaDefesa) {
+		this.mesesParaDefesa = mesesParaDefesa;
+	}
+
+	public double getAdicionalDiploma() {
+		return adicionalDiploma;
+	}
+
+	public void setAdicionalDiploma(double adicionalDiploma) {
+		this.adicionalDiploma = adicionalDiploma;
+	}
+	public int getQuantidadeAlunos() {
+		return quantidadeAlunos;
+	}
+
+	public void setQuantidadeAlunos(int quantidadeAlunos) {
+		this.quantidadeAlunos = quantidadeAlunos;
+	}
+	public double getSomatorio() {
+		return somatorio;
+	}
+
+	public void setSomatorio(double somatorio) {
+		this.somatorio = somatorio;
+	}
+
+	
+	public void adicionalDiploma (){
+		
+		double faltam = 0;
+		if ( getQuantiadeAlunos() < 24){
+			faltam =  150;
+		} else if (getQuantiadeAlunos() < 12){
+			faltam = 200;
+		} else if (getQuantiadeAlunos() < 6){
+			faltam = 300;
+		}		else if (getQuantiadeAlunos() > 30){
+			faltam = 400;
+		}
+	}
+	public void adicional(){
+		
+		double valor = 0;
+		if ( getQuantiadeAlunos() < 5){
+			valor =  (getQuantiadeAlunos() * 45) + getValorCurso();
+		} else if (getQuantiadeAlunos() < 30){
+			valor =  (getQuantiadeAlunos() * 45) + getValorCurso();
+		} else if (getQuantiadeAlunos() > 30){
+			valor = (getQuantiadeAlunos() * 40) + getValorCurso();
+		}
+		 setValorTotal(valor);
+	
+	}
+	
+	public void somaFinal(){
+		
+	}
+	
+	@Override
+	public String toString() {
+		return "------- CursoEspecializado -------\n"
+		
+				
+				
+				+ "\nCodígo:  " + getCodigo() 
+				+ "\nNumero da sala: " + getSala() 
+				+ "\nNome aluno: " + getNome()
+				+ "\nNome PRofessor: " + getNomeProfessor() 
+				+ "\nCargar Horaria: "+ getCargaHoraria()
+				+ "\nValor do Curso: "+ getValorCurso() 
+//				+ "\nisLatosansu()=" + isLatosansu()
+				+ "\nQuantidade de Alunos: " + getQuantiadeAlunos()
+				+ "\nQuantidade de mese p/Defesa: " + getMesesParaDefesa()
+				+ "\nAdicional da disciplina: " + getAdicionalDiploma()
+				+ "\nValor Total: " + getValorTotal();
+				
+	}
+	
+	
+
+}

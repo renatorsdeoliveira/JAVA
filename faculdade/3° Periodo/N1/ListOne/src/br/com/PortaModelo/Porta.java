@@ -1,24 +1,17 @@
 package br.com.PortaModelo;
 
 public class Porta {
+	private String aberta, cor;
+	private double dimensaoX, dimensaoY, dimensaoZ;
 
-	private String aberta;
-	private String dimensaoX;
-	private String dimensaoY;
-	private String dimensaoZ;
-	
-	
-	
-	
-	
 	public Porta() {
-		super();
-		// TODO Auto-generated constructor stub
+
 	}
 
-	public Porta(String aberta, String dimensaoX, String dimensaoY, String dimensaoZ) {
+	public Porta(String aberta, String cor, double dimensaoX, double dimensaoY, double dimensaoZ) {
 		super();
 		this.aberta = aberta;
+		this.cor = cor;
 		this.dimensaoX = dimensaoX;
 		this.dimensaoY = dimensaoY;
 		this.dimensaoZ = dimensaoZ;
@@ -32,32 +25,46 @@ public class Porta {
 		this.aberta = aberta;
 	}
 
-	public String getDimensaoX() {
+	public String getCor() {
+		return cor;
+	}
+
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+
+	public double getDimensaoX() {
 		return dimensaoX;
 	}
 
-	public void setDimensaoX(String dimensaoX) {
+	public void setDimensaoX(double dimensaoX) {
 		this.dimensaoX = dimensaoX;
 	}
 
-	public String getDimensaoY() {
+	public double getDimensaoY() {
 		return dimensaoY;
 	}
 
-	public void setDimensaoY(String dimensaoY) {
+	public void setDimensaoY(double dimensaoY) {
 		this.dimensaoY = dimensaoY;
 	}
 
-	public String getDimensaoZ() {
+	public double getDimensaoZ() {
 		return dimensaoZ;
 	}
 
-	public void setDimensaoZ(String dimensaoZ) {
+	public void setDimensaoZ(double dimensaoZ) {
 		this.dimensaoZ = dimensaoZ;
 	}
+
 	
-	
-	
-	
-	
+	@Override
+	public String toString() {
+		return "Porta: " + aberta + 
+				"\nCor: " + cor + 
+				"\nCumprimento: " + dimensaoX + 
+				" - Metros\nLargura Y: " + dimensaoY
+				+ " - Metros\nEspesura Z: " + dimensaoZ+" - Centimetros";
+	}
+
 }

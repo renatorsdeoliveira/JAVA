@@ -1,0 +1,68 @@
+package ordenacao;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Collection;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] arrlinha = null;
+		String valorf = null;
+		int i = 0, in;
+		String nome = "./data/Basque.txt";
+
+		System.out.printf("\nConteúdo do arquivo texto:\n");
+		try {
+			FileReader arq = new FileReader(nome);
+			BufferedReader lerArq = new BufferedReader(arq);
+
+			String linha = lerArq.readLine();
+			System.out.println(linha);
+			int tamVetor = Integer.parseInt(linha);
+			arrlinha = new String[tamVetor];
+			System.out.println(arrlinha.length);
+			while ( linha != null && i < tamVetor) {
+				linha = lerArq.readLine();
+	
+				arrlinha[i] = linha;
+				i++;
+			}
+
+			arq.close();
+		} catch (IOException e) {
+			System.err.printf("Erro na abertura do arquivo: %s.\n", e.getMessage());
+		}
+		
+		
+		long tempoInicio = System.nanoTime();
+		//Para quem for testar o codigo: eu deixei comentado so para testar parte por parte
+		//ate o insetionSort ta funcionando.
+		//Ordenacao.mostrarVetor(Ordenacao.selectionSort(arrlinha.clone()),tempoInicio); //funciona
+		//Ordenacao.mostrarVetor(Ordenacao.bubbleSort(arrlinha.clone(), arrlinha.length), tempoInicio);// Funciona
+		//Ordenacao.mostrarVetor(Ordenacao.insertionSort(arrlinha.clone(),arrlinha.length), tempoInicio);// Funciona
+		//Ordenacao.mostrarVetor(Ordenacao.mergeSort(arrlinha.clone(),0,arrlinha.length), tempoInicio);
+		//Ordenacao.mostrarVetor(Ordenacao.quickSort(arrlinha.clone(),0,arrlinha.length), tempoInicio);
+		Random busca = new Random();
+		int valors=busca.nextInt(arrlinha.length);
+		
+		valorf=arrlinha[valors];// Esse e para valor random
+		//valorf="pikir/BaBbDkM0MiMkO0OkP0PaS0SaT0Tka0k0o0";// Esse e se você quiser colocar um valor
+		
+		System.out.println("Valor a ser procurado: "+ valorf+ " "+ valorf.length());
+		//Busca.sequencial(Ordenacao.selectionSort(arrlinha.clone()),valorf);
+		String[] arrbinaria = Ordenacao.selectionSort(arrlinha.clone());
+		Busca.binaria(arrbinaria,valorf,0,arrbinaria.length,arrbinaria.length/2);
+	}
+
+		
+	}
+
+
+
