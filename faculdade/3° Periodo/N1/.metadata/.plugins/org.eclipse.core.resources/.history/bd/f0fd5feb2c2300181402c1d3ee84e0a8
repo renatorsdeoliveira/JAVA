@@ -1,0 +1,72 @@
+package br.com.CursoControle;
+
+import javax.swing.JOptionPane;
+
+import br.com.CursoModelo.Curso;
+import br.com.CursoModelo.CursoEspecializado;
+import br.com.CursoModelo.CursoMestrado;
+
+public class PrincipalCurso {
+
+	public static void main(String[] args) {
+		
+		Curso curso = new Curso();
+		int menuM;
+		
+
+		menuM = menu();
+		
+	
+		switch (menuM) {
+		case 1:
+			chamaCursoEspecializacao();
+			break;
+		case 2:
+			
+			break;
+		case 3:
+	
+			break;
+
+		default:
+			break;
+		}
+		
+
+	}
+
+	
+	
+	
+	
+	private static void chamaCursoEspecializacao() {
+		
+		CursoEspecializado ce = new CursoEspecializado();
+		
+		ce.setCodigo(Integer.parseInt(JOptionPane.showInputDialog("")));
+		ce.setSala(Integer.parseInt(JOptionPane.showInputDialog("")));
+		ce.setNome(JOptionPane.showInputDialog(""));
+		
+	}
+
+
+
+	private static int menu() {
+		int sair;
+		do{
+		 	JOptionPane.showMessageDialog(null, "Seja bem vindo!!!");			
+			int opc = Integer.parseInt(JOptionPane.showInputDialog( "Escolha uma opção\n"
+					+ "1 - Curso Especialização" 
+					+ "2 - Curso Mestrado" 
+					+ "3 - Curso Doutorado" 
+					+ "" 
+					+ ""  
+					+ "" ));
+			 sair = JOptionPane.showConfirmDialog(null, "Deseja Sair");
+
+		}while(sair !=0);
+		return sair;
+		
+	}
+
+}

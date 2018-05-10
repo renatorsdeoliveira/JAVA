@@ -1,0 +1,51 @@
+package br.com.CursoModelo;
+
+public class CursoEspecializado extends Curso{
+	
+	private boolean latosansu;
+	private double adicionalDiploma;
+	
+	
+	
+	public CursoEspecializado(boolean latosansu, double adicionalDiploma) {
+		super();
+		this.latosansu = latosansu;
+		this.adicionalDiploma = adicionalDiploma;
+	}
+
+	public CursoEspecializado(int codigo, int cargaHoraria, int sala, int quantiadeAlunos, String nome,
+			double valorCurso) {
+		super(codigo, cargaHoraria, sala, quantiadeAlunos, nome, valorCurso);
+		// TODO Auto-generated constructor stub
+	}
+
+	public CursoEspecializado() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public boolean isLatosansu() {
+		return latosansu;
+	}
+
+	public void setLatosansu(boolean latosansu) {
+		this.latosansu = latosansu;
+	}
+
+	public double getAdicionalDiploma() {
+		return adicionalDiploma;
+	}
+
+	public void setAdicionalDiploma(double adicionalDiploma) {
+		this.adicionalDiploma = adicionalDiploma;
+	}
+	
+	public void adicional (){
+		
+		double valor = 0;
+		if (getQuantiadeAlunos() > 0 || getQuantiadeAlunos() < 10){
+			
+			valor = getValorCurso() * getQuantiadeAlunos();
+		}
+	}
+
+}

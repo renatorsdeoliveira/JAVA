@@ -1,0 +1,41 @@
+package br.com.modelo;
+
+public class CalculadoraCientificaImplemente extends CalculadoraCientifica{
+
+	@Override
+	double raizQuadrada(double num) {
+		
+		return Math.sqrt(num);
+	}
+
+	@Override
+	double potencia(double num, double num2) {
+		
+		return Math.pow(num, num2);;
+	}
+
+	@Override
+	double soma(double num, double num2) {
+		
+		return num + num2 ;
+	}
+
+	@Override
+	double subtração(double num, double num2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	double multiplicacao(double num, double num2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	double diisao(double num, double num2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

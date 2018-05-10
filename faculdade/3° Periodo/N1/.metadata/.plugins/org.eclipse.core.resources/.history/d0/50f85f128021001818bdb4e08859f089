@@ -1,0 +1,10 @@
+package br.com.controle;
+
+public class PortaTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

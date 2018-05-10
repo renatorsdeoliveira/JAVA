@@ -1,0 +1,75 @@
+package br.com.CursoControle;
+
+import javax.swing.JOptionPane;
+
+import br.com.CursoModelo.Curso;
+import br.com.CursoModelo.CursoEspecializado;
+import br.com.CursoModelo.CursoMestrado;
+
+public class PrincipalCurso {
+
+	public static void main(String[] args) {
+		
+		Curso curso = new Curso();
+		
+		int menuM, sair;
+		
+		do{
+		
+		menuM = menu();
+		
+	
+		switch (menuM) {
+		case 1:
+
+			chamaCursoEspecializacao();
+			break;
+		case 2:
+			
+			break;
+		case 3:
+	
+			break;
+
+		default:
+			break;
+		}
+		}while(sair !=0);
+	}
+
+	
+	
+	
+	
+	private static void chamaCursoEspecializacao() {
+		
+		CursoEspecializado ce = new CursoEspecializado();
+		
+		ce.setCodigo(Integer.parseInt(JOptionPane.showInputDialog("Digite o codído do Curso: ")));
+		ce.setSala(Integer.parseInt(JOptionPane.showInputDialog("Digite o numero da sala: ")));
+		ce.setNome(JOptionPane.showInputDialog("Digite seu Nome: "));
+		ce.setNomeProfessor(JOptionPane.showInputDialog("Digite o nome do Professor: "));
+		ce.setCargaHoraria(Integer.parseInt(JOptionPane.showInputDialog("Digite a carga horaría do curso: ")));
+		ce.setValorCurso(Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do Curso: ")));
+		ce.setQuantiadeAlunos(Integer.parseInt(JOptionPane.showInputDialog("Digite a quatidade de alunos do curso: ")));		
+	}
+
+	private static int menu() {
+		int sair;
+		
+		 	JOptionPane.showMessageDialog(null, "Seja bem vindo!!!\n");			
+			int opc = Integer.parseInt(JOptionPane.showInputDialog( "Escolha uma opção\n"
+					+ "1 - Curso Especialização\n" 
+					+ "2 - Curso Mestrado\n" 
+					+ "3 - Curso Doutorado\n" 
+					+ "" 
+					+ ""  
+					+ "" ));
+			 sair = JOptionPane.showConfirmDialog(null, "Deseja Sair");
+
+		
+		return sair;
+		
+	}
+
+}

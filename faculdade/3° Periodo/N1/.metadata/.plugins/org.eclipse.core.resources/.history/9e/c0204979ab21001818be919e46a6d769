@@ -1,0 +1,29 @@
+package br.com.modelo;
+
+public class  CalculadoraImplementa extends Calculadora {
+
+	@Override
+	double soma(double num, double num2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	double subtração(double num, double num2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	double multiplicacao(double num, double num2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	double diisao(double num, double num2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

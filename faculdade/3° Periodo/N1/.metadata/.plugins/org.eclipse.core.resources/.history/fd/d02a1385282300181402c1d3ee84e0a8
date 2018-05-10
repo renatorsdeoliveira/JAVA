@@ -1,0 +1,50 @@
+package br.com.CursoControle;
+
+import javax.swing.JOptionPane;
+
+import br.com.CursoModelo.Curso;
+
+public class PrincipalCurso {
+
+	public static void main(String[] args) {
+		
+		Curso curso = new Curso();
+
+		menu();
+		do{
+	 	JOptionPane.showMessageDialog(null, "Seja bem vindo!!!");
+		
+		int opc = JOptionPane.showInternalImputDialog(null, "Escolha uma opção\n"
+				+ "1 - Curso Especialização" 
+				+ "2 - Curso Mestrado" 
+				+ "3 - Curso Doutorado" 
+				+ "" 
+				+ ""  
+				+ "" );
+		int sair = JOptionPane.showInternalConfirmDialog(null, "Deseja Sair")
+
+		while(){
+		switch (opc) {
+		case 1:
+			
+			break;
+		case 2:
+			
+			break;
+		case 3:
+	
+			break;
+
+		default:
+			break;
+		}
+		
+
+	}
+
+	private static void menu() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

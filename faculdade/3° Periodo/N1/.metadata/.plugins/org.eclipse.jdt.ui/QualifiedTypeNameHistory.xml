@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="br.com.modelo.Pais"/>
+<fullyQualifiedTypeName name="br.com.modelo.Porta"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="br.com.modelo.CalculadoraCientifica"/>
+<fullyQualifiedTypeName name="br.com.modelo.CalculadoraCientificaImplemente"/>
+<fullyQualifiedTypeName name="br.com.modelo.CalculadoraImplemente"/>
+<fullyQualifiedTypeName name="br.com.controle.PrincipalCalculadora"/>
+<fullyQualifiedTypeName name="br.com.CalculadoraModelo.CalculadoraImplemente"/>
+<fullyQualifiedTypeName name="br.com.CalculadoraModelo.CalculadoraCientificaImplemente"/>
+<fullyQualifiedTypeName name="br.com.CalculadoraControle.PrincipalCalculadora"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>

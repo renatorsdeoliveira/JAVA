@@ -1,0 +1,83 @@
+package br.com.CursoModelo;
+
+public class Curso {
+	private int codigo;
+	private int cargaHoraria;
+	private int sala;
+	private int quantiadeAlunos;
+	private String nome;
+	private String nomeProfessor;
+	private double valorCurso;
+	private double valorTotal;
+	
+	
+	
+	
+	
+	public Curso() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Curso(int codigo, int cargaHoraria, int sala, int quantiadeAlunos, String nome, double valorTotal , double valorTotal) {
+		super();
+		this.codigo = codigo;
+		this.cargaHoraria = cargaHoraria;
+		this.sala = sala;
+		this.quantiadeAlunos = quantiadeAlunos;
+		this.nome = nome;
+		this.valorCurso = valorCurso;
+		this.valorTotal = valorTotal;
+	}
+	public int getCodigo() {
+		return codigo;
+	}
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+	public int getCargaHoraria() {
+		return cargaHoraria;
+	}
+	public void setCargaHoraria(int cargaHoraria) {
+		this.cargaHoraria = cargaHoraria;
+	}
+	public int getSala() {
+		return sala;
+	}
+	public void setSala(int sala) {
+		this.sala = sala;
+	}
+	public int getQuantiadeAlunos() {
+		return quantiadeAlunos;
+	}
+	public void setQuantiadeAlunos(int quantiadeAlunos) {
+		this.quantiadeAlunos = quantiadeAlunos;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getNomeProfessor() {
+		return nomeProfessor;
+	}
+	public void setNomeProfessor(String nomeProfessor) {
+		this.nomeProfessor = nomeProfessor;
+	}
+	public double getValorCurso() {
+		return valorCurso;
+	}
+	public void setValorCurso(double valorCurso) {
+		this.valorCurso = valorCurso;
+	}
+	public double getValorTotal() {
+		return valorTotal;
+	}
+	public void setValorTotal(double valorTotal) {
+		this.valorTotal = valorTotal;
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,63 @@
+package br.com.modelo;
+
+public class Porta {
+
+	private String aberta;
+	private String dimensaoX;
+	private String dimensaoY;
+	private String dimensaoZ;
+	
+	
+	
+	
+	
+	public Porta() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Porta(String aberta, String dimensaoX, String dimensaoY, String dimensaoZ) {
+		super();
+		this.aberta = aberta;
+		this.dimensaoX = dimensaoX;
+		this.dimensaoY = dimensaoY;
+		this.dimensaoZ = dimensaoZ;
+	}
+
+	public String getAberta() {
+		return aberta;
+	}
+
+	public void setAberta(String aberta) {
+		this.aberta = aberta;
+	}
+
+	public String getDimensaoX() {
+		return dimensaoX;
+	}
+
+	public void setDimensaoX(String dimensaoX) {
+		this.dimensaoX = dimensaoX;
+	}
+
+	public String getDimensaoY() {
+		return dimensaoY;
+	}
+
+	public void setDimensaoY(String dimensaoY) {
+		this.dimensaoY = dimensaoY;
+	}
+
+	public String getDimensaoZ() {
+		return dimensaoZ;
+	}
+
+	public void setDimensaoZ(String dimensaoZ) {
+		this.dimensaoZ = dimensaoZ;
+	}
+	
+	
+	
+	
+	
+}

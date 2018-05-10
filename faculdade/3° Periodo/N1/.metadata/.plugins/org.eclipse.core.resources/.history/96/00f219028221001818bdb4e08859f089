@@ -1,0 +1,12 @@
+package br.com.modelo;
+
+public class Porta {
+
+	private String aberta;
+	private String dimensaoX;
+	private String dimensaoY;
+	private String dimensaoZ;
+	
+	
+	
+}

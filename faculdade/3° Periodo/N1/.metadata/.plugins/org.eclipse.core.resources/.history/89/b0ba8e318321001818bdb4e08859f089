@@ -1,0 +1,25 @@
+package br.com.controle;
+
+import javax.swing.JOptionPane;
+
+import br.com.modelo.Porta;
+
+public class PortaTeste {
+
+	public static void main(String[] args) {
+		
+		Porta porta = new Porta();
+		
+		int op = Integer.parseInt(JOptionPane.showInputDialog("Diite um numero\n"));
+		
+		switch (key) {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
+	}
+
+}

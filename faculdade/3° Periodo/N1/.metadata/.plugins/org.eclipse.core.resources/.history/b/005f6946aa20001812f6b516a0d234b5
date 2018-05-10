@@ -1,0 +1,39 @@
+package br.com.controle;
+
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+import br.com.modelo.Pais;
+
+
+
+public class Principal {
+	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Pais> paises = new ArrayList<>();
+		int sair ;
+		
+		do {
+		Pais pais = new Pais();
+		pais.setNome(JOptionPane.showInputDialog("Digite o nome de um Pais: "));
+		pais.setCapital(JOptionPane.showInputDialog("Digite o nome Capital: "));
+		pais.setMetrosQudrados(Integer.parseInt(JOptionPane.showInputDialog("Digite os metros: ")));
+		
+		
+		paises.add(pais);
+		
+		sair = JOptionPane.showConfirmDialog(null, "desejasair? ");
+		}while(sair != 0);
+		
+		for (Pais pais2 : paises) {
+			JOptionPane.showMessageDialog(null, pais2.toString());
+			
+		}
+		
+		
+
+	}
+}

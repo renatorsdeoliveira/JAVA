@@ -1,0 +1,28 @@
+package br.com.CursoControle;
+
+import javax.swing.JOptionPane;
+
+import br.com.CursoModelo.Curso;
+
+public class PrincipalCurso {
+
+	public static void main(String[] args) {
+		
+		Curso curso = new Curso();
+
+		
+		JOptionPane.showMessageDialog(null, "Seja bem vindo!!!");
+		int opc = JOptionPane.showInternalConfirmDialog(null, "Escolha uma opção");
+		switch (opc) {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
+		
+
+	}
+
+}

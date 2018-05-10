@@ -1,0 +1,48 @@
+package br.com.CursoModelo;
+
+public class CursoMestrado extends Curso{
+	
+	private boolean strictoSensu;
+	private double adicionalDiploma;
+	
+	public CursoMestrado(boolean strictoSensu, double adicionalDiploma) {
+		super();
+		this.strictoSensu = strictoSensu;
+		this.adicionalDiploma = adicionalDiploma;
+	}
+
+	public CursoMestrado() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public CursoMestrado(int codigo, int cargaHoraria, int sala, int quantiadeAlunos, String nome, double valorCurso) {
+		super(codigo, cargaHoraria, sala, quantiadeAlunos, nome, valorCurso);
+		// TODO Auto-generated constructor stub
+	}
+
+	public boolean isStrictoSensu() {
+		return strictoSensu;
+	}
+
+	public void setStrictoSensu(boolean strictoSensu) {
+		this.strictoSensu = strictoSensu;
+	}
+
+	public double getAdicionalDiploma() {
+		return adicionalDiploma;
+	}
+
+	public void setAdicionalDiploma(double adicionalDiploma) {
+		this.adicionalDiploma = adicionalDiploma;
+	}
+	
+	public void adicional(){
+	
+	}
+	
+	
+
+}
+
+	

@@ -1,0 +1,7 @@
+package br.com.CalculadoraModelo;
+
+public abstract class CalculadoraCientifica extends Calculadora{
+	
+	public abstract double raizQuadrada (double num);
+	abstract double potencia (double num, double num2);
+}

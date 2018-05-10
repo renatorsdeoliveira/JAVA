@@ -1,0 +1,9 @@
+package br.com.modelo;
+
+public class Edificio {
+
+	private String cor;
+	private int totalDePortas;
+	private int totalDeAndares;
+	
+}

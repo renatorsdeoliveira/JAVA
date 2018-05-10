@@ -1,0 +1,14 @@
+package br.com.CursoModelo;
+
+public class Curso {
+	private int codigo;
+	private int cargaHoraria;
+	private int sala;
+	private int quantiadeAlunos;
+	private String nome;
+	private double valorCurso;
+	
+	
+	
+
+}

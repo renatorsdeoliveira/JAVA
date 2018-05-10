@@ -1,0 +1,134 @@
+package br.com.sistemaAluno;
+
+import javax.swing.JOptionPane;
+
+public class Aluno {
+	private  int codigo, idade;
+	private String nome, cpf, endereço;
+	private boolean sexo;
+	private Notas notas;
+	private String SituaçãoResultado;
+
+	public Aluno() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public Aluno(int codigo, int idade, String nome, String cpf, String endereço, boolean sexo, Notas notas,
+			String situaçãoResultado) {
+		super();
+		this.codigo = codigo;
+		this.idade = idade;
+		this.nome = nome;
+		this.cpf = cpf;
+		this.endereço = endereço;
+		this.sexo = sexo;
+		this.notas = notas;
+		SituaçãoResultado = situaçãoResultado;
+	}
+
+
+	public String Situacao(){
+		Notas n = new Notas();
+		
+		String 	msg = "";
+		double no = n.getResultadaMedia();
+		if ( no >= 0.0 || no < 6.0){
+			msg = "";
+			msg += "Resultado\nAluno: "+getNome()
+			+"\nCodigo: "+getCodigo()
+			+"\nCPF: "+getCpf()
+			+"\nIdade: "+getIdade()
+			+"\nEndereço: "+getEndereço()
+			+"\nSituação: REPROVADO "
+			+"\nCom a nota: "+n.getResultadaMedia();
+			return msg;
+		}else if ( no >= 6.0 || no <=10.0){
+			
+			msg += "Resultado\nAluno: "+getNome()
+			+"\nCodigo: "+getCodigo()
+			+"\nCPF: "+getCpf()
+			+"\nIdade: "+getIdade()
+			+"\nEndereço: "+getEndereço()
+			+"\nSituação: APROVADO "
+			+"\nCom a nota: "+no;
+			return msg;
+		}else{
+			msg += "Resultado não encontrado: ";
+		}
+		return msg;
+		
+
+	}
+
+	public int getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+
+	public int getIdade() {
+		return idade;
+	}
+
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getEndereço() {
+		return endereço;
+	}
+
+	public void setEndereço(String endereço) {
+		this.endereço = endereço;
+	}
+
+	public boolean isSexo() {
+		return sexo;
+	}
+
+	public void setSexo(boolean sexo) {
+		this.sexo = sexo;
+	}
+
+	public Notas getNotas() {
+		return notas;
+	}
+
+	public void setNotas(Notas notas) {
+		this.notas = notas;
+	}
+
+
+	public String getSituaçãoResultado() {
+		return SituaçãoResultado;
+	}
+
+
+	public void setSituaçãoResultado(String situaçãoResultado) {
+		SituaçãoResultado = situaçãoResultado;
+	}
+
+
+
+
+}

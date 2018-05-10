@@ -1,0 +1,6 @@
+package br.com.modelo;
+
+public class Edificio {
+
+	private String cor;
+}

@@ -1,0 +1,9 @@
+package br.com.CalculadoraModelo;
+
+public abstract class Calculadora {
+
+	abstract double soma(double num, double num2);
+	abstract double subtração (double num, double num2);
+	abstract double multiplicacao (double num, double num2);
+	abstract double divisao (double num, double num2);
+}

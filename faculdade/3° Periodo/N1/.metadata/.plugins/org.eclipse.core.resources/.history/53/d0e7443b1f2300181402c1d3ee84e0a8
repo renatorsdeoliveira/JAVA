@@ -1,0 +1,30 @@
+package br.com.CursoModelo;
+
+public class Curso {
+	private int codigo;
+	private int cargaHoraria;
+	private int sala;
+	private int quantiadeAlunos;
+	private String nome;
+	private double valorCurso;
+	
+	
+	public Curso() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Curso(int codigo, int cargaHoraria, int sala, int quantiadeAlunos, String nome, double valorCurso) {
+		super();
+		this.codigo = codigo;
+		this.cargaHoraria = cargaHoraria;
+		this.sala = sala;
+		this.quantiadeAlunos = quantiadeAlunos;
+		this.nome = nome;
+		this.valorCurso = valorCurso;
+	}
+	
+	
+	
+	
+
+}

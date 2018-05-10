@@ -1,0 +1,32 @@
+package br.com.controle;
+
+import javax.swing.JOptionPane;
+
+import br.com.modelo.Porta;
+
+public class PortaTeste {
+
+	public static void main(String[] args) {
+		
+		Porta porta = new Porta();
+		int sair
+		int op = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero\n"
+				+ "1 - para Criar uma porta"
+				+ "2 - Pinte sua porta"
+				+ "3 - Almente a Dimenção y da porta"
+				+ "4 - Almente a Dimensão z da porta"));
+		do{
+		switch (op) {
+		case 1:
+			
+			break;
+
+		default:
+			break;
+		}
+		
+		int sair  = JOptionPane.showConfirmDialog(null, "Deseja sair? aperte 0");
+		}while(sair = 0);
+	}
+
+}

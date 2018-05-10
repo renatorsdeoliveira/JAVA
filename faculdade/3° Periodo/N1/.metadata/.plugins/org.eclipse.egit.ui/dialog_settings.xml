@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="CommitDialog.authorValues">
+		<item value="RenatoOoO &lt;renatooliveirasi@hotmail.com&gt;"/>
 		<item value="RenatoOoO &lt;32549530+RenatoOoO@users.noreply.github.com&gt;"/>
 	</list>
 	<list key="CommitDialog.committerValues">
+		<item value="RenatoOoO &lt;renatooliveirasi@hotmail.com&gt;"/>
 		<item value="Família Oliveira &lt;Família Oliveira@DESKTOP-7MVH380&gt;"/>
 	</list>
 	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
@@ -18,9 +20,16 @@
 		</list>
 	</section>
 	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\Família Oliveira\Documents\DESENVOLVIMENTO\JAVA\.git">
+			<item value="false"/>
+			<item value="RenatoOoO &lt;renatooliveirasi@hotmail.com&gt;"/>
+			<item value="*inicio da segunda questão ListOne&#x0D;&#x0A;&#x0D;&#x0A;"/>
+			<item value="RenatoOoO &lt;renatooliveirasi@hotmail.com&gt;"/>
+			<item value="5ac279e8c9d1edf6577615657fef5a3180786d24"/>
+		</list>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
-		<item value="200,200" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
 		<item value="false" key="sortItemState"/>
 		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
 	</section>

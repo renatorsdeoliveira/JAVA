@@ -1,0 +1,9 @@
+package br.com.sistemaAluno;
+
+public class Curso {
+	private int código, cargaHoraria, sala;
+	private String nome, nomeProfessor;
+	private double valorCurso;
+	private ArrayList<Aluno> alunos;
+
+}

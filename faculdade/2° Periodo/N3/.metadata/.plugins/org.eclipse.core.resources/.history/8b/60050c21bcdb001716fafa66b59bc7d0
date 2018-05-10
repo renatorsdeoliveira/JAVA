@@ -1,0 +1,39 @@
+package br.com.sistemaAluno;
+
+import javax.swing.JOptionPane;
+
+public class teste {
+
+	public static void main(String[] args) {
+		
+		Aluno a = new Aluno();
+		a.setNome(JOptionPane.showInputDialog("Digite seu nome: "));
+		a.setCodigo(Integer.parseInt(JOptionPane.showInputDialog("Digite seu Código: ")));
+		do{
+		a.setIdade(Integer.parseInt(JOptionPane.showInputDialog("Digite seu Idade: ")));
+		if(a.getIdade() >= 120){
+			JOptionPane.showMessageDialog(null, "Idade acima da faixa etária");
+		}
+		}while(a.getIdade() >= 120);
+		a.setCpf(JOptionPane.showInputDialog("Digite seu CPF: "));
+		a.setEndereço(JOptionPane.showInputDialog("Digite seu Endereço: "));
+		
+		
+		Notas n = new Notas ();
+//		n.setNota1(Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da N1: ")));
+//		n.setNota2(Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da N2: ")));
+//		n.setNota3(Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da N3: ")));
+//		n.media();
+		
+		JOptionPane.showMessageDialog(null, ""+n.getResultadaMedia());
+		a.Situacao();
+		JOptionPane.showMessageDialog(null, ""+a.Situacao());
+//		
+//		JOptionPane.showConfirmDialog(null, "");
+//		JOptionPane.showMessageDialog(null, "");
+//		JOptionPane.showInputDialog("");
+//		Integer.parseInt("");
+//		Double.parseDouble("");
+	}
+
+}

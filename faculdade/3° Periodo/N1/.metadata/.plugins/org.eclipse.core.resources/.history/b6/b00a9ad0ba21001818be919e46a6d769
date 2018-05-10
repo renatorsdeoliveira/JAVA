@@ -1,0 +1,65 @@
+package com.br.revisao;
+
+import javax.swing.JOptionPane;
+
+import com.br.controle.Principalimplecalculadorcintifica;
+
+public class Principalcalculadorobjeto {
+
+	public static void main(String[] args) {
+		Principalimplecalculadorcintifica c1 = new Principalimplecalculadorcintifica();
+		int menu;
+		do {
+			menu = menudeopcoes();
+			switch (menu) {
+			case 0:
+				JOptionPane.showMessageDialog(null, "____Saindo do sistema_____");
+				break;
+			case 1:
+				int n1, n2;
+				n1 = Integer.parseInt(JOptionPane.showInputDialog(" Primeiro numeros "));
+				n2 = Integer.parseInt(JOptionPane.showInputDialog(n1 + " SOMA  "));
+				JOptionPane.showMessageDialog(null, "SOMA DOS NUMERO = ( " + c1.soma(n1, n2) + " )");
+				break;
+			case 2:
+				n1 = Integer.parseInt(JOptionPane.showInputDialog(" Primeiro numeros "));
+				n2 = Integer.parseInt(JOptionPane.showInputDialog(n1 + " MULTIPLICA  "));
+				JOptionPane.showMessageDialog(null, "MUTIPLICAÇÃO DOS NUMEROS  ( " + c1.multiplicação(n1, n2) + " )");
+				break;
+			case 3:
+				n1 = Integer.parseInt(JOptionPane.showInputDialog(" Primeiro numeros  "));
+				n2 = Integer.parseInt(JOptionPane.showInputDialog(n1 + " SUBTRAI  "));
+				JOptionPane.showMessageDialog(null, "SUBTRAÇÃO DOS NUMEROS  ( " + c1.subtração(n1, n2) + " )");
+				break;
+			case 4:
+				n1 = Integer.parseInt(JOptionPane.showInputDialog(" Primeiro numeros "));
+				n2 = Integer.parseInt(JOptionPane.showInputDialog(n1 + "  DIVIDIDO POR  "));
+				JOptionPane.showMessageDialog(null, "DIVISÃO DOS NUMEROS  ( " + c1.divisao(n1, n2) + " )");
+				break;
+			case 5:
+				n1 = Integer.parseInt(JOptionPane.showInputDialog(" Primeiro numeros  "));
+				n2 = Integer.parseInt(JOptionPane.showInputDialog(n1 + " ELEVADO INDICE  "));
+				JOptionPane.showMessageDialog(null, "DIVISÃO DOS NUMEROS  ( " + c1.potência(n1, n2) + " )");
+				break;
+			case 6:
+				n1 = Integer.parseInt(JOptionPane.showInputDialog(" Primeiro numeros  "));
+				JOptionPane.showMessageDialog(null, "RAIZ DO NUMERO  ( " + n1 + " = " + c1.raiz(n1) + " )");
+
+			}
+
+		} while (menu != 0);
+	}
+
+	private static int menudeopcoes() {
+		int menu;
+		do {
+			String msg = "___BEM VINDO A CALCULADORA____\n" + "0 Sair do sistema " + "\n1 Adição "
+					+ "\n2 Multiplicação " + "\n3 Subtração" + "\n4 Divisão " + "\n5 Potência " + "\n6 Raiz ";
+
+			menu = Integer.parseInt(JOptionPane.showInputDialog(msg + "\nInforme a opção desejada "));
+			return menu;
+		} while (menu < 0 || menu > 6);
+
+	}
+
+}

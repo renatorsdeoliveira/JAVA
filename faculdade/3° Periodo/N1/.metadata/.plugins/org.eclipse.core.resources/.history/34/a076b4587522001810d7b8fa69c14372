@@ -1,0 +1,56 @@
+package br.com.CalculadoraControle;
+
+import javax.swing.JOptionPane;
+
+import br.com.CalculadoraModelo.CalculadoraCientificaImplemente;
+
+
+public class PrincipalCalculadora {
+
+
+	public static void main(String[] args) {
+		
+		CalculadoraCientificaImplemente cal = new CalculadoraCientificaImplemente ();
+		int n1, n2;
+		int opc, menu;
+		
+		
+	    menu();
+		do {
+			switch (menu) {
+			case 1:
+			
+				break;
+			case 1:
+				
+				break;
+			case 1:
+				
+				break;
+
+			default:
+				break;
+			}
+			
+			opc = JOptionPane.showConfirmDialog(null, "Deseja sair? s/n");
+		} while ( opc != 0);
+	
+		
+
+	}
+
+	private static void menu() {
+		int menu;
+		
+		do {
+		menu = Integer.parseInt(JOptionPane.showInputDialog("----- Escolha uma Operação ------\n"
+				+"1 - Soma"
+				+"2 - Subtração"
+				+"3 - Multiplicação"
+				+"4 - Divisão"
+				+"5 - Raiz Quadrata"
+				+"6 - Potencia"));
+		} while (condition);
+	}
+
+}

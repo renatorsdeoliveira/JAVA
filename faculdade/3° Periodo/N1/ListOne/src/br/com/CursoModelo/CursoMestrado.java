@@ -1,0 +1,77 @@
+package br.com.CursoModelo;
+
+public class CursoMestrado extends Curso{
+	
+	private boolean strictoSensu;
+	private double adicionalDiploma;
+	
+	public CursoMestrado(boolean strictoSensu, double adicionalDiploma) {
+		super();
+		this.strictoSensu = strictoSensu;
+		this.adicionalDiploma = adicionalDiploma;
+	}
+
+	public CursoMestrado() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public CursoMestrado(int codigo, int cargaHoraria, int sala, int quantiadeAlunos, String nome, double valorCurso, double valorTotal) {
+		super(codigo, cargaHoraria, sala, quantiadeAlunos, nome, valorCurso,  valorTotal);
+		// TODO Auto-generated constructor stub
+	}
+
+	public boolean isStrictoSensu() {
+		return strictoSensu;
+	}
+
+	public void setStrictoSensu(boolean strictoSensu) {
+		this.strictoSensu = strictoSensu;
+	}
+
+	public double getAdicionalDiploma() {
+		return adicionalDiploma;
+	}
+
+	public void setAdicionalDiploma(double adicionalDiploma) {
+		this.adicionalDiploma = adicionalDiploma;
+	}
+	
+	public void adicional(){
+		
+		double valor = 0;
+		if ( getQuantiadeAlunos() < 5){
+			valor =  (getQuantiadeAlunos() * 45) + getValorCurso();
+		} else if (getQuantiadeAlunos() < 15){
+			valor =  (getQuantiadeAlunos() * 43) + getValorCurso();
+		} else if (getQuantiadeAlunos() < 30){
+			valor = (getQuantiadeAlunos() * 40) + getValorCurso();
+		}else if (getQuantiadeAlunos() > 30){
+			valor = (getQuantiadeAlunos() * 36) + getValorCurso();
+		}
+		
+		 setValorTotal(valor);
+	}
+	@Override
+	public String toString() {
+		return "------- CursoEspecializado -------\n"
+		
+				
+				
+				+ "\nCodígo:  " + getCodigo() 
+				+ "\nNumero da sala: " + getSala() 
+				+ "\nNome aluno: " + getNome()
+				+ "\nNome PRofessor: " + getNomeProfessor() 
+				+ "\nCargar Horaria: "+ getCargaHoraria()
+				+ "\nValor do Curso: "+ getValorCurso() 
+//				+ "\nisLatosansu()=" + isLatosansu()
+				+ "\nQuantidade de Alunos: " + getQuantiadeAlunos()
+				+ "\nAdicional da disciplina: " + getAdicionalDiploma()
+				+ "\nValor Total: " + getValorTotal();
+				
+	}
+	
+
+}
+
+	

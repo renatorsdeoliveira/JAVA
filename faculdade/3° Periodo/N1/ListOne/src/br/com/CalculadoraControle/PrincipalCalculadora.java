@@ -1,0 +1,78 @@
+package br.com.CalculadoraControle;
+
+import javax.swing.JOptionPane;
+
+import br.com.CalculadoraModelo.CalculadoraCientificaImplemente;
+
+
+public class PrincipalCalculadora {
+
+
+	public static void main(String[] args) {
+		
+		CalculadoraCientificaImplemente cal = new CalculadoraCientificaImplemente ();
+		int n1, n2;
+		int opc, menuM ;
+		
+	    
+		do {
+			menuM = menu();
+			switch (menuM) {
+			case 1:
+				n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o Primeiro numero: "));
+				n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o Segundo numero: "));
+				JOptionPane.showMessageDialog(null, "O Resultado da Soma: " + cal.soma(n1, n2));
+				break;
+			case 2:
+				n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o Primeiro numero: "));
+				n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o Segundo numero: "));
+				JOptionPane.showMessageDialog(null, "O Resultado da Subtração: " + cal.subtracao(n1, n2));
+				break;
+			case 3:
+				n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o Primeiro numero: "));
+				n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o Segundo numero: "));
+				JOptionPane.showMessageDialog(null, "O Resultado da Multiplicação: " + cal.multiplicacao(n1, n2));
+				break;
+			case 4:
+				n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o Primeiro numero: "));
+				n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o Segundo numero: "));
+				JOptionPane.showMessageDialog(null, "O Resultado da Divisão: " + cal.divisao(n1, n2));
+				break;
+			case 5:
+				n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o Primeiro numero: "));
+				JOptionPane.showMessageDialog(null, "O Resultado da Raiz Quadrata: " + cal.raizQuadrada(n1));
+				break;
+			case 6:
+				n1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o Primeiro numero: "));
+				n2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o Segundo numero: "));
+				JOptionPane.showMessageDialog(null, "O Resultado da Potencia: " + cal.potencia(n1, n2));
+				break;
+			default:
+				JOptionPane.showMessageDialog(null, "Numero não encontrado");
+				break;
+			}
+
+			opc = JOptionPane.showConfirmDialog(null, "Deseja sair? s/n");
+		} while (opc != 0);
+
+	}
+
+	private static int menu() {
+		int menu;
+		
+		do {
+		menu = Integer.parseInt(JOptionPane.showInputDialog("----- Escolha uma Operação ------\n"
+				+"1 - Soma\n"
+				+"2 - Subtração\n"
+				+"3 - Multiplicação\n"
+				+"4 - Divisão\n"
+				+"5 - Raiz Quadrata\n"
+				+"6 - Potencia\n"));
+		if (menu < 0 || menu > 6) {
+		JOptionPane.showMessageDialog(null, "Nota Invalida, tente Novamente!");	
+		}
+		} while (menu < 0 || menu > 6);
+		return menu;
+	}
+
+}

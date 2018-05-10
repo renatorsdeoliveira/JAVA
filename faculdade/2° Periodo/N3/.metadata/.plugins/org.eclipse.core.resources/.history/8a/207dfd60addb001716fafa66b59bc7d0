@@ -1,0 +1,25 @@
+package br.com.sistemaAluno;
+
+import javax.swing.JOptionPane;
+
+public class teste {
+
+	public static void main(String[] args) {
+		Notas n = new Notas ();
+		n.setNota1(Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da N1")));
+		n.setNota2(Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da N2")));
+		n.setNota3(Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da N3")));
+		n.getResultadaMedia();
+		
+		JOptionPane.showMessageDialog(null, ""+n.getResultadaMedia(););
+		
+		
+		
+		JOptionPane.showConfirmDialog(null, "");
+		JOptionPane.showMessageDialog(null, "");
+		JOptionPane.showInputDialog("");
+		Integer.parseInt("");
+		Double.parseDouble("");
+	}
+
+}

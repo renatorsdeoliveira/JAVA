@@ -1,0 +1,49 @@
+package com.br.controle;
+
+public class Principalimplecalculadorcintifica extends Calculadoracientifica {
+
+	@Override
+	public double raiz(double inteiro) {
+
+		return Math.sqrt(inteiro);
+	}
+
+	@Override
+	public double potência(double inteiro, double inteiro2) {
+
+		return Math.pow(inteiro, inteiro2);
+	}
+
+	@Override
+	public double soma(double inteiro, double inteiro2) {
+
+		return inteiro + inteiro2;
+	}
+
+	@Override
+	public double subtração(double inteiro, double inteiro2) {
+
+		return inteiro - inteiro2;
+	}
+
+	@Override
+	public double divisao(double inteiro, double inteiro2) {
+
+		return inteiro / inteiro2;
+	}
+
+	@Override
+	public double multiplicação(double inteiro, double inteiro2) {
+
+		return inteiro * inteiro2;
+	}
+
+	@Override
+	public String toString() {
+		return "Principalimplecalculadorcintifica [getClass()=" + getClass() + ", hashCode()=" + hashCode()
+				+ ", toString()=" + super.toString() + "]";
+	}
+	
+	
+
+}

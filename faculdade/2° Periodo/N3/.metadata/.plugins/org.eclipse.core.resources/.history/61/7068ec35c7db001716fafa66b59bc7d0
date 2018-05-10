@@ -1,0 +1,71 @@
+package br.com.sistemaAluno;
+
+import javax.swing.JOptionPane;
+
+public class teste {
+
+	public static void main(String[] args) {
+		
+		Aluno a = new Aluno();
+//		a.setNome(JOptionPane.showInputDialog("Digite seu nome: "));
+//		a.setCodigo(Integer.parseInt(JOptionPane.showInputDialog("Digite seu Código: ")));
+//		do{
+//		a.setIdade(Integer.parseInt(JOptionPane.showInputDialog("Digite seu Idade: ")));
+//		if(a.getIdade() >= 120){
+//			JOptionPane.showMessageDialog(null, "Idade acima da faixa etária");
+//		}
+//		}while(a.getIdade() >= 120);
+//		a.setCpf(JOptionPane.showInputDialog("Digite seu CPF: "));
+//		a.setEndereço(JOptionPane.showInputDialog("Digite seu Endereço: "));
+		
+		
+		Notas n = new Notas ();
+		do{
+		n.setNota1(Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da N1: ")));
+		if(n.getNota1()<= 0 || n.getNota1() >= 10.0){
+			JOptionPane.showMessageDialog(null, "Não existe media menor que [0] e maior que [10.0]");
+		}
+		}while(n.getNota1() <= 0 || n.getNota1() >= 10.0);
+		do{
+		n.setNota2(Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da N2: ")));
+		if(n.getNota2() <= 0 || n.getNota2() >= 10.0){
+			JOptionPane.showMessageDialog(null, "Não existe media menor que [0] e maior que [10.0]");
+		}
+		}while(n.getNota2() <= 0 || n.getNota2() >= 10.0);
+		do{
+		n.setNota3(Double.parseDouble(JOptionPane.showInputDialog("Digite a nota da N3: ")));
+		if(n.getNota3() <= 0 || n.getNota3() >= 10.0){
+			JOptionPane.showMessageDialog(null, "Não existe media menor que [0] e maior que [10.0]");
+		}
+		}while(n.getNota3() <= 0 || n.getNota3() >= 10.0);
+		
+		n.media();
+		
+		JOptionPane.showMessageDialog(null, ""+n.getResultadaMedia());
+		a.Situacao();
+
+		n.media();
+		String 	msg = "";
+		n.getResultadaMedia();
+		if ( n.getResultadaMedia() >= 0.0 || n.getResultadaMedia() < 6.0){
+			
+			 n.getResultadaMedia();
+			
+		}else if ( n.getResultadaMedia() >= 6.0 || n.getResultadaMedia() <=10.0){
+			 n.getResultadaMedia();
+		}else{
+			msg += "Resultado não encontrado: ";
+		}
+	
+		JOptionPane.showMessageDialog(null, ""+a.getSituaçãoResultado());
+		
+		a.setNotas(n);
+//		
+//		JOptionPane.showConfirmDialog(null, "");
+//		JOptionPane.showMessageDialog(null, "");
+//		JOptionPane.showInputDialog("");
+//		Integer.parseInt("");
+//		Double.parseDouble("");
+	}
+
+}
