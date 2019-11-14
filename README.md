@@ -1,1 +1,1 @@
-# Tarefas e problemas resolvidos na faculdade
+# Tarefas e exercícios resolvidos na faculdade
