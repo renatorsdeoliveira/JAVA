@@ -6,12 +6,11 @@ public class EX_17 {
 
 	
 
-	private static Scanner in;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		in = new Scanner(System.in);
+		Scanner  in = new Scanner(System.in);
 		int codigo;
 		
 		System.out.print("Digite o Codigo de [1] a [15]: ");

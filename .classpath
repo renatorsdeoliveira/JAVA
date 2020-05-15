@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Cuso_Java/28_30/src"/>
+	<classpathentry kind="src" path="Cuso_Java/Curso_Java/src"/>
+	<classpathentry kind="src" path="Cuso_Java/GustavoQuaabara/src"/>
+	<classpathentry kind="src" path="faculdade/2° Periodo/N1/workspace/Class/src"/>
+	<classpathentry kind="src" path="faculdade/2° Periodo/N1/workspace/EXERCICIOS/src"/>
+	<classpathentry kind="src" path="faculdade/2° Periodo/N1/workspace/LISTA_DE_EXERCICIOS_N1/src"/>
+	<classpathentry kind="src" path="faculdade/2° Periodo/N1/workspace/MetodoVariavel/src"/>
+	<classpathentry kind="src" path="faculdade/2° Periodo/N2/Exercicios/src"/>
+	<classpathentry kind="src" path="faculdade/2° Periodo/N2/Lista POO 1/ListadePOO/src"/>
+	<classpathentry kind="src" path="faculdade/2° Periodo/N2/Lista POO 2/src"/>
+	<classpathentry kind="src" path="faculdade/2° Periodo/N2/POO3/src"/>
+	<classpathentry kind="src" path="faculdade/3° Periodo/N1/ListOne/src"/>
+	<classpathentry kind="src" path="faculdade/3° Periodo/N1/MetodosDePesquisa/src"/>
+	<classpathentry kind="src" path="faculdade/3° Periodo/N1/ordenação/Ordenacao/src"/>
+	<classpathentry kind="src" path="faculdade/3° Periodo/N2/LISTA-PILHA-FILA/PILHA-FILA-ARVORE/src"/>
+	<classpathentry kind="output" path="faculdade/2° Periodo/N1/workspace/Class/bin"/>
+</classpath>
