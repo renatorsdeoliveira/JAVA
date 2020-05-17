@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 public class PrincipalAluno {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		int menu = 0;
 		
 		ArrayList<Aluno> listaAlunos = new ArrayList<>();
