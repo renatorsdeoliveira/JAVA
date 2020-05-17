@@ -18,7 +18,7 @@ public class PrincipalAluno {
 			aluno.setNome(JOptionPane.showInputDialog("Digite seu nome"));
 			aluno.setNumMatricula(JOptionPane.showInputDialog("Digite sua matricula"));	
 			
-			//verificação da entrada das notas
+			//verificaï¿½ï¿½o da entrada das notas
 			do {
 				aluno.setN1(Double.parseDouble(JOptionPane.showInputDialog("Digite sua nota da N1")));
 				if(aluno.getN1() < 0 || aluno.getN1() > 10) 
@@ -31,7 +31,7 @@ public class PrincipalAluno {
 			} while (aluno.getN2() < 0 || aluno.getN2() > 10);
 			
 			
-			//verificação da situaçao
+			//verificaï¿½ï¿½o da situaï¿½ao
 			if(aluno.calculaMedia() < 6.0) {
 				aluno.setSituacao("Reprovado");
 			}else {

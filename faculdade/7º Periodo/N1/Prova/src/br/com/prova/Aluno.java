@@ -1,5 +1,6 @@
 package br.com.prova;
 
+import javax.swing.JOptionPane;
 
 public class Aluno {
 	private int codigo;
@@ -10,12 +11,16 @@ public class Aluno {
 	private boolean sexo;
 	private char genero;
 	private Notas notas;
+	private String SituaçãoResultado;
 	
+
 	public Aluno() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Aluno(int codigo, int idade, String nome, String cpf, String endereco, boolean sexo, Notas notas) {
+	
+	public Aluno(int codigo, int idade, String nome, String cpf, String endereco, boolean sexo, char genero,
+			Notas notas, String situaçãoResultado) {
 		super();
 		this.codigo = codigo;
 		this.idade = idade;
@@ -23,8 +28,38 @@ public class Aluno {
 		this.cpf = cpf;
 		this.endereco = endereco;
 		this.sexo = sexo;
+		this.genero = genero;
 		this.notas = notas;
+		SituaçãoResultado = situaçãoResultado;
 	}
+	
+	public String  Situacao(){
+
+
+		
+		Notas n = new Notas();
+		
+		String 	msg = "";
+		
+		if ( getNotas().getResultadaMedia() < 6.0){
+			
+			msg	+="\nSituação: REPROVADO "
+			+"\nCom a nota: "+getNotas().getResultadaMedia();
+			return msg;
+		}else if (getNotas().getResultadaMedia() >= 6.0){
+		
+			msg += "\nSituação: APROVADO "
+			+"\nCom a nota: "+getNotas().getResultadaMedia();
+			return msg;
+		}else{
+			return msg;	
+		}
+			
+
+	}
+
+
+
 	public int getCodigo() {
 		return codigo;
 	}
@@ -74,29 +109,16 @@ public class Aluno {
 	public void setGenero(char genero) {
 		this.genero = genero;
 	}
-	
-	public String  Situacao(){		
-		Notas n = new Notas();
-		
-		String 	msg = "";
+	public String getSituaçãoResultado() {
+		return SituaçãoResultado;
+	}
 
-		if ( getNotas().getMedia() < 6.0){
-			
-			msg	+="\nSituação: REPROVADO "
-			+"\nCom a Media: "+getNotas().getMedia();
-			return msg;
-		}else if (getNotas().getMedia() >= 6.0){
-		
-			msg += "\nSituação: APROVADO "
-			+"\nCom a Media: "+getNotas().getMedia();
-			return msg;
-		}else{
-			return msg;	
-		}
-		
+	public void setSituaçãoResultado(String situaçãoResultado) {
+		SituaçãoResultado = situaçãoResultado;
 	}
 
 	
+		
 	
 	@Override
 	public String toString() {

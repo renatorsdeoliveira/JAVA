@@ -6,20 +6,39 @@ public class Notas {
 	private double n2;
 	private double n3;
 	private double media;
-	private String situacao;
+	private double resultadaMedia;
 	
 	
-	public Notas(double n1, double n2, double n3, double media, String situacao) {
+	public Notas(double n1, double n2, double n3, double media, double resultadaMedia) {
 		super();
 		this.n1 = n1;
 		this.n2 = n2;
 		this.n3 = n3;
 		this.media = media;
-		this.situacao = situacao;
+		this.resultadaMedia = resultadaMedia;
+	}
+	public Notas(double n1, double n2, double n3, double resultadaMedia ) {
+		super();
+		this.n1 = n1;
+		this.n2 = n2;
+		this.n3 = n3;
 	}
 	public Notas() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+	public void setMedia(double n1, double n2, double n3) {
+		double mediasoma = (n1 + n2 + n3) / 3;
+		setResultadaMedia(mediasoma);
+	}
+	
+	public double getResultadaMedia() {
+		
+		return resultadaMedia;
+	}
+	public void setResultadaMedia(double resultadaMedia) {
+		this.resultadaMedia = resultadaMedia;
+		
 	}
 	public double getN1() {
 		return n1;
@@ -43,25 +62,8 @@ public class Notas {
 		return media;
 	}
 	
-	public String getSituacao() {
-		
-		return situacao;
-	}
-	public void setSituacao(String situacao) {
-		this.situacao = situacao;
-		
-	}
-	public void setMedia(double n1, double n2, double n3) {
-		double media = (n1 + n2 + n3) / 3;
-		
-		if(media  >= 6 && getMedia() < 10) {
-			setSituacao("Aprovado");
-		}
-		else {
-			setSituacao("Reprovado");
-		}
-		this.media = media;
-	}
+
+
 	
 	@Override
 	public String toString() {

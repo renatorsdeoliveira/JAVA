@@ -7,32 +7,34 @@ public class Curso {
 	private int codigo;
 	private int cargaHoraria;
 	private int sala;
+	private String nomeCurso;
 	private String nomeProfessor;
 	private double valorCurso;
 	private ArrayList<Aluno> alunos;
+	
 	
 	public Curso() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Curso(int codigo, int cargaHoraria, int sala, String nomeProfessor, double valorCurso,
+	
+	public Curso(int codigo, int cargaHoraria, int sala, String nomeCurso, String nomeProfessor, double valorCurso,
 			ArrayList<Aluno> alunos) {
 		super();
 		this.codigo = codigo;
 		this.cargaHoraria = cargaHoraria;
 		this.sala = sala;
+		this.nomeCurso = nomeCurso;
 		this.nomeProfessor = nomeProfessor;
 		this.valorCurso = valorCurso;
 		this.alunos = alunos;
 	}
-	public Curso(int codigo, int cargaHoraria, int sala, String nomeProfessor, double valorCurso) {
-		super();
-		this.codigo = codigo;
-		this.cargaHoraria = cargaHoraria;
-		this.sala = sala;
-		this.nomeProfessor = nomeProfessor;
-		this.valorCurso = valorCurso;
 
+	public String getNomeCurso() {
+		return nomeCurso;
+	}
+	public void setNomeCurso(String nomeCurso) {
+		this.nomeCurso = nomeCurso;
 	}
 	public int getCodigo() {
 		return codigo;
@@ -70,6 +72,19 @@ public class Curso {
 	public void setAlunos(ArrayList<Aluno> alunos) {
 		this.alunos = alunos;
 	}
+
+	@Override
+	public String toString() {
+				return "\nCurso cadastrado "+
+						"\nNome Curso: "+ nomeCurso +
+						"\nnome Professor: " + nomeProfessor + 
+						"\nCodigo: " + codigo + 
+						"\nCarga Horaria: " + cargaHoraria +
+						"\nValor Curso: " + valorCurso + 
+						"\nSala: " + sala+ "\n\n";
+					
+	}
+	
 	
 	
 }
